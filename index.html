@@ -1287,6 +1287,91 @@
             .btn-tripadvisor:hover { transform: none; }
             .region-card:hover::before { transform: none; }
         }
+
+        /* ============================================
+           TURISMO MÍSTICO
+        ============================================ */
+        .mystic{background:radial-gradient(ellipse at top,#1d3a1a 0%,#0b140a 55%,#050805 100%);color:#fff;position:relative}
+        .mystic .section-title{color:#fff}
+        .mystic .section-subtitle,.mystic .gold{color:var(--gold)}
+        .mystic-lead{color:#c9c9c9;max-width:720px;margin:0 auto;font-style:italic;font-family:'Playfair Display',serif;font-size:1.15rem}
+        .mx{max-width:1200px;margin:0 auto}
+        .mx-head{text-align:center;margin:0 auto 3rem}
+        .mx-head h3{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.4rem);letter-spacing:4px;color:var(--gold);text-transform:uppercase}
+        .mx-head small{letter-spacing:4px;color:var(--accent);text-transform:uppercase;font-size:.8rem}
+        .mx-split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center;margin-bottom:4rem}
+        .mx-split.rev .mx-photo{order:2}
+        .mx-photo{height:100%;min-height:340px;max-height:520px;border-radius:20px;overflow:hidden;border:1px solid rgba(201,169,97,.35)}
+        .mx-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .9s ease}
+        .mx-photo:hover img{transform:scale(1.05)}
+        .mx-text h4{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3vw,2rem);color:var(--gold);margin-bottom:1rem}
+        .mx-text p{color:#d6d6d6;margin-bottom:1rem}
+        .mx-text .quote{font-family:'Playfair Display',serif;font-style:italic;color:var(--accent);border-left:3px solid var(--gold);padding-left:1rem}
+        .mx-chips{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0}
+        .mx-chips span{border:1px solid rgba(201,169,97,.5);color:var(--gold);padding:.4rem 1rem;border-radius:50px;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase}
+        .mx-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1.2rem;margin-bottom:4rem}
+        .mystic-card{background:rgba(255,255,255,.04);border:1px solid rgba(201,169,97,.25);border-radius:18px;padding:1.6rem;text-align:center;transition:border-color .3s,transform .3s}
+        .mystic-card:hover{border-color:var(--gold)}
+        .mystic-card i{font-size:1.8rem;color:var(--gold);margin-bottom:.8rem}
+        .mystic-card h5{font-size:1rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+        .mystic-card p{font-size:.88rem;color:#cfcfcf}
+        .mystic-card .era{display:block;color:var(--accent);font-weight:600;margin-bottom:.4rem}
+        .mx-sub{text-align:center;font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3vw,2rem);color:#fff;margin-bottom:1.5rem}
+        .mx-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:1rem;counter-reset:st;margin-bottom:1rem}
+        .mx-steps .mystic-card{counter-increment:st;position:relative;padding-top:2.4rem}
+        .mx-steps .mystic-card::before{content:'0' counter(st);position:absolute;top:.7rem;left:50%;transform:translateX(-50%);font-weight:700;color:var(--gold);border:1px solid var(--gold);border-radius:50px;padding:0 .7rem;font-size:.8rem;background:#0b140a}
+        .mx-note{text-align:center;color:var(--accent);font-style:italic;font-family:'Playfair Display',serif;margin-bottom:4rem}
+        .mx-price{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3rem);align-items:center;background:linear-gradient(135deg,rgba(201,169,97,.12),rgba(255,255,255,.03));border:1px solid var(--gold);border-radius:24px;padding:clamp(1.5rem,4vw,3rem)}
+        .mx-price ul{list-style:none;margin:1rem 0}
+        .mx-price li{padding:.4rem 0;color:#e2e2e2}
+        .mx-price li i{color:var(--gold);width:1.6rem}
+        .mx-amount{text-align:center;border:1px solid rgba(201,169,97,.5);border-radius:18px;padding:1.5rem;margin-bottom:1rem}
+        .mx-amount strong{display:block;font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3rem);color:var(--gold)}
+        .mx-amount span{letter-spacing:2px;font-size:.8rem;text-transform:uppercase;color:#bbb}
+        .mx-small{font-size:.8rem;color:#aaa;margin-top:.8rem}
+
+        .mx-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.2rem;margin-bottom:2.5rem}
+        .mx-box{background:rgba(255,255,255,.04);border:1px solid rgba(201,169,97,.25);border-radius:18px;padding:1.5rem}
+        .mx-box h5{color:var(--gold);letter-spacing:2px;text-transform:uppercase;font-size:.95rem;margin-bottom:.8rem}
+        .mx-box ul{list-style:none}
+        .mx-box li{padding:.35rem 0 .35rem 1.4rem;position:relative;font-size:.9rem;color:#d6d6d6;border-bottom:1px solid rgba(255,255,255,.06)}
+        .mx-box li:last-child{border-bottom:0}
+        .mx-box li::before{content:'✦';position:absolute;left:0;color:var(--gold);font-size:.7rem;top:.6rem}
+        .mx-box.warn li::before{content:'!';font-weight:700;top:.4rem}
+        .mx-box li b{color:var(--accent);font-weight:600;margin-right:.4rem}
+        .mx-faq details{border:1px solid rgba(201,169,97,.25);border-radius:14px;padding:1rem 1.2rem;margin-bottom:.8rem;background:rgba(255,255,255,.03)}
+        .mx-faq summary{cursor:pointer;color:var(--gold);font-weight:600}
+        .mx-faq p{margin-top:.7rem;color:#d0d0d0;font-size:.92rem}
+        /* ===== Turismo Místico: 3 servicios diferenciados ===== */
+        .mx{--c:var(--gold);position:relative;padding:clamp(2rem,5vw,4.5rem) clamp(1rem,4vw,3.5rem);border-radius:32px;border:1px solid color-mix(in srgb,var(--gold) 45%,transparent);margin:0 auto 5rem;overflow:hidden}
+        .mx::before{content:'';position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,transparent,var(--gold),var(--accent),transparent)}
+        #wachuma{--gold:#c9a961;--accent:#d4a574;background:radial-gradient(ellipse at top,rgba(76,130,60,.22),rgba(255,255,255,.015) 65%)}
+        #ayahuasca{--gold:#e0a35a;--accent:#c39be0;background:radial-gradient(ellipse at top,rgba(110,50,140,.30),rgba(255,255,255,.015) 65%)}
+        #bano-florecimiento{--gold:#eba7b6;--accent:#8fd6c6;background:radial-gradient(ellipse at top,rgba(220,100,135,.20),rgba(60,150,135,.06) 65%)}
+        .mx .mystic-card,.mx .mx-box,.mx .mx-photo,.mx .mx-amount,.mx .mx-faq details,.mx .mx-chips span{border-color:color-mix(in srgb,var(--gold) 40%,transparent)}
+        .mx .btn{background:linear-gradient(135deg,var(--gold),var(--accent));color:#120b08;border-color:transparent}
+        .mx-ico{width:84px;height:84px;margin:0 auto 1.1rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.1rem;color:var(--gold);border:1px solid var(--gold);background:color-mix(in srgb,var(--gold) 14%,transparent);box-shadow:0 0 40px color-mix(in srgb,var(--gold) 30%,transparent)}
+        .mx-badge{display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:50px;padding:.3rem 1.1rem;font-size:.7rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:.8rem}
+        .mx-head small{display:block;margin-bottom:.6rem}
+        .mx-tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1.2rem;max-width:1000px;margin:2.5rem auto 0;text-align:left}
+        .mx-tab{display:block;text-decoration:none;padding:1.5rem;border-radius:20px;border:1px solid var(--c);background:linear-gradient(160deg,color-mix(in srgb,var(--c) 20%,transparent),rgba(255,255,255,.02));transition:transform .3s,box-shadow .3s}
+        .mx-tab:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(0,0,0,.45)}
+        .mx-tab i{float:right;font-size:1.8rem;color:var(--c)}
+        .mx-tab span{font-size:.7rem;letter-spacing:3px;color:var(--c);text-transform:uppercase}
+        .mx-tab strong{display:block;font-family:'Playfair Display',serif;font-size:1.55rem;color:var(--c);margin:.3rem 0}
+        .mx-tab p{font-size:.85rem;color:#d0d0d0;margin:0}
+        .mx-tab.t-w{--c:#c9a961}.mx-tab.t-a{--c:#e0a35a}.mx-tab.t-b{--c:#eba7b6}
+        @media (max-width:560px){.mx{border-radius:22px}}
+        .mx-sep{display:flex;align-items:center;gap:1.2rem;margin:6rem auto 4rem;max-width:760px;color:var(--gold)}
+        .mx-sep::before,.mx-sep::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+        .mx-sep i{font-size:1.4rem}
+        .mx-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;margin:2.2rem auto 0}
+        .mx-nav a{border:1px solid rgba(201,169,97,.5);color:var(--gold);padding:.5rem 1.2rem;border-radius:50px;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:background .3s,color .3s}
+        .mx-nav a:hover{background:var(--gold);color:#0b140a}
+        .mx-prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1.2rem;max-width:900px;margin:0 auto 1rem}
+        .mx-prices .mystic-card{display:flex;flex-direction:column;justify-content:center}
+        .mx-prices .mystic-card .amt{display:block;font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--gold);margin:.3rem 0}
+        @media (max-width:768px){.mx-split,.mx-price{grid-template-columns:1fr}.mx-split.rev .mx-photo{order:0}.mx-photo{min-height:260px}}
     </style>
 </head>
 <body>
@@ -1306,6 +1391,7 @@
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#catalogos">Tours</a></li>
                 <li><a href="#aventura">Aventura</a></li>
+                <li><a href="#misticos">Místico</a></li>
                 <li><a href="#equipo">Guías</a></li>
                 <li><a href="#pagos">Pagos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -2461,6 +2547,234 @@
         </div>
     </section>
 
+    <!-- TURISMO MÍSTICO -->
+    <section class="mystic" id="misticos">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Turismo Místico</p>
+                <h2 class="section-title">Ceremonias Sagradas Ancestrales</h2>
+                <div class="section-divider" style="background:var(--gold);"></div>
+                <p class="mystic-lead">Cuerpo · Mente · Espíritu · Naturaleza se encuentran profundamente relacionados. Una experiencia auténtica en un espacio ceremonial cuidado y protegido.</p>
+                <div class="mx-tabs"><a class="mx-tab t-w" href="#wachuma"><i class="fas fa-mountain-sun"></i><span>Servicio 01</span><strong>Wachuma</strong><p>El cactus sagrado de los Andes · desde US$ 200</p></a><a class="mx-tab t-a" href="#ayahuasca"><i class="fas fa-leaf"></i><span>Servicio 02</span><strong>Ayahuasca</strong><p>Purificación amazónica · desde S/ 650</p></a><a class="mx-tab t-b" href="#bano-florecimiento"><i class="fas fa-spa"></i><span>Servicio 03</span><strong>Baño de Florecimiento</strong><p>Limpieza con flores, hierbas y cuarzos</p></a></div>
+            </div>
+
+            <!-- EXPERIENCIA WACHUMA -->
+            <div class="mx" id="wachuma">
+                <div class="mx-head"><div class="mx-ico"><i class="fas fa-mountain-sun"></i></div><span class="mx-badge">Servicio 01</span><small>Cusco · Perú</small><h3>Wachuma</h3><p class="mystic-lead">Una experiencia ancestral de introspección y conexión interior.</p></div>
+
+                <h4 class="mx-sub">Modalidades y tarifas</h4>
+                <div class="mx-prices">
+                    <div class="mystic-card"><i class="fas fa-user-group"></i><h5>Experiencia privada para 2</h5><span class="amt">US$ 350</span><p>por persona · US$ 700 total · 6 – 7 horas con peregrinaje por la naturaleza.</p></div>
+                    <div class="mystic-card"><i class="fas fa-sun"></i><h5>Retiro Full Day</h5><span class="amt">US$ 200</span><p>por persona · salida desde Cusco y regreso el mismo día (7:00 a.m. – 2:30 p.m.).</p></div>
+                    <div class="mystic-card"><i class="fas fa-moon"></i><h5>Retiro 2 días / 1 noche</h5><span class="amt">US$ 320</span><p>por persona · pernocte en el Valle Sagrado, cena y desayuno veganos, ceremonia al día siguiente.</p></div>
+                </div>
+                <p class="mx-note" style="margin-bottom:4rem">Ceremonia grupal o privada. Todas las modalidades son Wachuma; cada una incluye lo detallado más abajo.</p>
+
+
+                <div class="mx-split">
+                    <div class="mx-photo"><img data-wx="07" src="assets/wachuma/07.jpg" alt="Atardecer andino con cactus Wachuma y figuras en contemplación" loading="lazy" style="object-position:58% 50%"></div>
+                    <div class="mx-text">
+                        <h4>El espíritu de la experiencia</h4>
+                        <p>Las ceremonias sagradas basadas en tradiciones ancestrales parten de una visión en la que cuerpo, mente, espíritu y naturaleza se encuentran profundamente relacionados.</p>
+                        <p>Cada ceremonia ofrece un espacio para la contemplación, el autodescubrimiento y la conexión profunda con la naturaleza y con aquello que cada persona considera sagrado.</p>
+                        <div class="mx-chips"><span>Cuerpo</span><span>Mente</span><span>Espíritu</span><span>Naturaleza</span></div>
+                    </div>
+                </div>
+
+                <div class="mx-split rev">
+                    <div class="mx-photo"><img data-wx="06" src="assets/wachuma/06.jpg" alt="Cactus Wachuma visto desde abajo hacia el cielo" loading="lazy" style="object-position:50% 50%"></div>
+                    <div class="mx-text">
+                        <h4>¿Qué es la Wachuma?</h4>
+                        <p class="gold" style="letter-spacing:2px;text-transform:uppercase;font-weight:600;">El cactus sagrado de los Andes</p>
+                        <p>La Wachuma es un cactus originario de los Andes sudamericanos. Durante siglos ha estado relacionada con prácticas ceremoniales y espirituales dentro de diferentes contextos culturales andinos.</p>
+                    </div>
+                </div>
+                <div class="mx-grid"><div class="mystic-card"><i class="fas fa-mountain-sun"></i><h5>Naturaleza</h5><p>El cactus forma parte del ecosistema andino.</p></div><div class="mystic-card"><i class="fas fa-landmark"></i><h5>Tradición</h5><p>Su utilización ceremonial posee una historia precolombina.</p></div><div class="mystic-card"><i class="fas fa-hands-praying"></i><h5>Espiritualidad</h5><p>Dentro de determinadas cosmovisiones se relaciona con la naturaleza y lo sagrado.</p></div><div class="mystic-card"><i class="fas fa-spa"></i><h5>Experiencia</h5><p>La ceremonia contemporánea recoge estos elementos dentro de un espacio de introspección.</p></div></div>
+
+                <div class="mx-split">
+                    <div class="mx-photo"><img data-wx="09" src="assets/wachuma/09.jpg" alt="Pobladores andinos con vestimenta tradicional junto al cactus Wachuma" loading="lazy" style="object-position:28% 35%"></div>
+                    <div class="mx-text">
+                        <h4>Una historia que nace en los Andes</h4>
+                        <p class="gold" style="letter-spacing:2px;text-transform:uppercase;font-weight:600;">Wachuma: una tradición precolombina</p>
+                        <p>La relación ceremonial con la Wachuma se remonta a tiempos precolombinos. Su historia está vinculada al antiguo territorio peruano y a sociedades que desarrollaron complejos sistemas ceremoniales y una profunda relación espiritual con la naturaleza.</p>
+                        <p>Estas tradiciones forman parte del amplio legado cultural andino que precede al periodo incaico.</p>
+                    </div>
+                </div>
+                <div class="mx-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));"><div class="mystic-card"><i class="fas fa-monument"></i><h5>Chavín</h5><span class="era">1200 – 200 a.C.</span></div><div class="mystic-card"><i class="fas fa-monument"></i><h5>Moche</h5><span class="era">100 – 800 d.C.</span></div><div class="mystic-card"><i class="fas fa-monument"></i><h5>Chimú</h5><span class="era">900 – 1470 d.C.</span></div></div>
+
+                <div class="mx-split rev" style="margin-top:-1rem;">
+                    <div class="mx-photo"><img data-wx="02" src="assets/wachuma/02.jpg" alt="Copas ceremoniales de plata para la bebida de Wachuma" loading="lazy" style="object-position:50% 55%"></div>
+                    <div class="mx-text">
+                        <h4>La Wachuma y la mescalina</h4>
+                        <p>La Wachuma (<em>Echinopsis pachanoi</em>) contiene diferentes alcaloides. Entre ellos destaca la mescalina, un compuesto psicoactivo conocido por sus propiedades psicodélicas, que puede producir modificaciones en la percepción y en la experiencia subjetiva.</p>
+                        <p>La dimensión química es solamente una parte del fenómeno. También intervienen:</p>
+                        <div class="mx-chips"><span>El entorno</span><span>El contexto</span><span>La intención</span><span>La sensibilidad</span><span>La interpretación personal</span></div>
+                        <p class="quote">La planta forma parte de la experiencia; el significado que cada persona encuentra en ella es propio.</p>
+                    </div>
+                </div>
+
+                <div class="mx-split">
+                    <div class="mx-photo"><img data-wx="03" src="assets/wachuma/03.jpg" alt="Caminante con poncho contemplando el lago andino" loading="lazy" style="object-position:68% 60%"></div>
+                    <div class="mx-text">
+                        <h4>Ceremonia de Wachuma: caminar, contemplar, conectar</h4>
+                        <p>La ceremonia contempla tradicionalmente la preparación y toma de un brebaje elaborado a partir del cactus Wachuma, dentro de un contexto ceremonial cuidadoso y respetuoso. En esta cosmovisión, la Wachuma se relaciona con el <strong class="gold">espíritu masculino de la Madre Naturaleza</strong>.</p>
+                        <p>La experiencia puede incluir un peregrinaje o caminata por la naturaleza, con paradas en lugares especiales para la meditación, la oración, la contemplación y la conexión con la naturaleza. La propuesta contempla meditación, música ceremonial y permanencia o recorrido en un espacio natural o arqueológico previamente coordinado.</p>
+                    </div>
+                </div>
+
+                <div class="mx-split rev">
+                    <div class="mx-photo"><img data-wx="08" src="assets/wachuma/08.jpg" alt="Contemplación silenciosa en una cueva de roca andina" loading="lazy" style="object-position:72% 70%"></div>
+                    <div class="mx-text">
+                        <h4>Tu experiencia es personal</h4>
+                        <p>La experiencia de Wachuma es profundamente introspectiva. Cada participante puede percibir, interpretar y comprender lo vivido desde sus:</p>
+                        <div class="mx-chips"><span>Creencias</span><span>Perspectiva</span><span>Ideología</span><span>Filosofía</span><span>Mentalidad</span><span>Cosmovisión</span></div>
+                        <p>Para algunas personas puede adquirir un significado espiritual o religioso; para otras, reflexión, contemplación, conexión con la naturaleza o exploración interior.</p>
+                        <p class="quote">No existe una única manera de interpretar una experiencia interior.</p>
+                    </div>
+                </div>
+
+                <h4 class="mx-sub" id="wachuma-privada">Experiencia privada para dos · tu jornada de 6 – 7 horas</h4>
+                <div class="mx-steps"><div class="mystic-card"><i class="fas fa-people-group"></i><h5>Orientación</h5><p>Recepción y explicación.</p></div><div class="mystic-card"><i class="fas fa-bowl-food"></i><h5>Preparación</h5><p>Preparación ceremonial e intención personal.</p></div><div class="mystic-card"><i class="fas fa-seedling"></i><h5>Wachuma</h5><p>Inicio de la ceremonia y acompañamiento.</p></div><div class="mystic-card"><i class="fas fa-person-hiking"></i><h5>Peregrinaje</h5><p>Caminata, meditación y contemplación.</p></div><div class="mystic-card"><i class="fas fa-leaf"></i><h5>Naturaleza</h5><p>Conexión consciente con el entorno.</p></div><div class="mystic-card"><i class="fas fa-sun"></i><h5>Integración</h5><p>Reflexión y cierre ceremonial.</p></div></div>
+                <p class="mx-note">Un día para reconectar con lo esencial.</p>
+
+                <div class="mx-price">
+                    <div class="mx-text">
+                        <h4>Una experiencia para dos<br><small style="font-size:.6em;letter-spacing:2px;color:var(--accent)">PRIVATE WACHUMA EXPERIENCE</small></h4>
+                        <ul><li><i class="fas fa-user-group"></i>2 participantes</li><li><i class="fas fa-clock"></i>6 – 7 horas aproximadamente</li><li><i class="fas fa-spa"></i>Ceremonia privada</li><li><i class="fas fa-hands-holding"></i>Acompañamiento</li><li><i class="fas fa-mountain"></i>Naturaleza</li><li><i class="fas fa-om"></i>Meditación</li><li><i class="fas fa-person-hiking"></i>Peregrinaje</li></ul>
+                        <p class="quote">“Compartir esta experiencia es abrir juntos un camino hacia lo esencial.”</p>
+                    </div>
+                    <div>
+                        <div class="mx-photo" style="min-height:260px;max-height:320px;margin-bottom:1rem;"><img data-wx="05" src="assets/wachuma/05.jpg" alt="Pareja compartiendo la experiencia de Wachuma" loading="lazy" style="object-position:50% 22%"></div>
+                        <div class="mx-amount"><strong>USD 350</strong><span>por persona</span><hr style="border:0;border-top:1px solid rgba(201,169,97,.4);margin:.8rem 0"><strong>USD 700</strong><span>total · 2 personas</span></div>
+                        <a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20Experiencia%20en%20Wachuma%20para%202%20personas." target="_blank" rel="noopener" class="btn" style="display:block;text-align:center;"><i class="fab fa-whatsapp"></i> Reservar por WhatsApp</a>
+                        <p class="mx-small">El precio corresponde a la modalidad básica. Si desean un escenario especial o premium, podemos presentar una alternativa según el lugar y los servicios seleccionados. Antes de reservar, consúltanos sobre tu estado de salud y medicación.</p>
+                    </div>
+                </div>
+
+                <!-- RETIRO WACHUMA (full day / 2d-1n) -->
+                <h4 class="mx-sub" id="wachuma-retiro" style="margin-top:2rem">Retiro Wachuma · Full Day o 2 días / 1 noche</h4>
+                <p class="mx-note" style="margin-bottom:2.5rem">Ceremonia grupal o privada en el Valle Sagrado, con acompañamiento permanente.</p>
+                <div class="mx-split">
+                    <div class="mx-photo"><img data-wx="01" src="assets/wachuma/01.jpg" alt="Participantes en círculo ceremonial sobre la ladera andina" loading="lazy" style="object-position:45% 72%"></div>
+                    <div class="mx-text">
+                        <h4>Nuestro santuario ceremonial</h4>
+                        <p>A 2 km de Ollantaytambo, en el camino hacia el Camino Inka, en la comunidad de Rumira. Un espacio rodeado de montañas para descansar, prepararse y vivir la ceremonia con acompañamiento permanente.</p>
+                        <p>La Wachuma es una medicina tradicional andina con una larga historia ceremonial en el Perú. La ceremonia es conducida por un guía espiritual o chamán, con meditación, ícaros y medicina musical.</p>
+                        <div class="mx-chips"><span>Limpieza y protección</span><span>Meditación Energética Inca</span><span>Medicina musical</span></div>
+                    </div>
+                </div>
+                <div class="mx-cols"><div class="mx-box "><h5>Ceremonia grupal · incluye</h5><ul><li>Experiencia Wachuma Retreat</li><li>Limpieza y protección energética</li><li>Meditación Energética Inca</li><li>Medicina musical</li><li>Libro “Cusco Attractions” (imágenes de la cultura inka)</li><li>7 cristales de protección y poder para los 7 chakras</li><li>Consulta médica previa en clínica aliada</li><li>Transporte privado hotel – centro ceremonial Cusco</li><li>Infusiones medicinales</li></ul></div><div class="mx-box "><h5>Ceremonia privada · incluye</h5><ul><li>Experiencia Wachuma Retreat</li><li>Limpieza y protección energética</li><li>Meditación Energética Inca</li><li>Medicina musical</li><li>Guía espiritual o chamán</li><li>Libro “Cusco Attractions” (imágenes de la cultura inka)</li><li>7 cristales de protección y poder para los 7 chakras</li><li>Consulta médica previa en clínica aliada</li><li>Transporte privado hotel – centro ceremonial Cusco</li><li>Infusiones medicinales incas</li></ul></div></div>
+                <h4 class="mx-sub">Itinerarios</h4>
+                <div class="mx-cols"><div class="mx-box "><h5>Retiro Full Day</h5><ul><li><b>7:00 a.m.</b>Salida del hotel – Centro ceremonial Cusco</li><li><b>8:00 a.m.</b>Introducción a la ceremonia y sus efectos</li><li><b>8:20 a.m.</b>Explicación de la Meditación Energética Inca</li><li><b>8:40 a.m.</b>Limpieza andina y protección energética</li><li><b>9:00 a.m.</b>Toma de la bebida sagrada Wachuma</li><li><b>1:00 p.m.</b>Interpretación de las visiones</li><li><b>2:30 p.m.</b>Regreso al hotel en Cusco</li></ul></div><div class="mx-box "><h5>2 días / 1 noche · Día 1</h5><ul><li><b>2:30 p.m.</b>Salida del hotel – Centro ceremonial Ollantaytambo</li><li><b>4:00 p.m.</b>Instalación en el hotel – centro ceremonial</li><li><b>5:00 p.m.</b>Encuentro espiritual · baño de florecimiento</li><li><b>7:00 p.m.</b>Cena espiritual (vegana)</li><li><b>8:00 p.m.</b>Preparación del retiro · ícaros y cantos de purificación</li><li><b>9:00 p.m.</b>Meditación y peticiones, con maestro espiritual</li><li><b>11:00 p.m.</b>Pernocte en hotel holístico</li></ul></div><div class="mx-box "><h5>2 días / 1 noche · Día 2</h5><ul><li><b>8:00 a.m.</b>Desayuno espiritual (vegano)</li><li><b>9:00 a.m.</b>Introducción a la ceremonia y sus efectos</li><li><b>9:20 a.m.</b>Explicación de la Meditación Energética Inca</li><li><b>9:40 a.m.</b>Limpieza andina y protección energética</li><li><b>10:00 a.m.</b>Toma de la medicina Wachuma</li><li><b>1:00 p.m.</b>Interpretación de las visiones</li><li><b>2:00 p.m.</b>Retorno a su hotel en Cusco</li></ul></div></div>
+                <h4 class="mx-sub">Preparación y seguridad</h4>
+                <div class="mx-cols"><div class="mx-box "><h5>Dieta previa</h5><ul><li>Dieta de 1, 2 o 3 días antes (mínimo 24 horas; más días, mejor)</li><li>Frutas y verduras, mucha agua, mate de coca y descanso temprano</li><li>Sin sal, azúcar, carne, frituras, gaseosas, cigarros, alcohol, caramelos ni nada artificial; sin relaciones sexuales</li><li>Continuar la dieta 1 o 2 días después de la ceremonia</li><li>Medicamentos: infórmalos al reservar; no los suspendas por tu cuenta sin consultar a tu médico</li></ul></div><div class="mx-box warn"><h5>No pueden participar</h5><ul><li>Quienes no hayan hecho la dieta mínima de 24 horas</li><li>Mujeres embarazadas</li><li>Personas con problemas cardíacos (ataques al corazón)</li><li>Personas con epilepsia</li><li>Personas con esquizofrenia u otros problemas mentales</li><li>Quienes buscan “experimentar” o drogarse</li><li>Nunca combinar con alcohol u otras drogas</li></ul></div><div class="mx-box "><h5>Seguridad y acompañamiento</h5><ul><li>Cuestionario de salud física y psicológica antes de reservar</li><li>Revisión de historial médico y medicación por un psiquiatra (no presente en el sitio)</li><li>Chequeo médico previo en clínica aliada</li><li>Equipo de salud: cardiólogo, psiquiatra, psicólogo, médico general y enfermera de urgencias</li><li>Enfermero(a) certificado durante toda la ceremonia, control físico al finalizar y monitoreo durante la noche</li><li>Grupos reducidos: máximo 6 personas por ceremonia</li><li>Medicación de emergencia disponible y seguimiento psicológico si es necesario</li><li>Transporte privado disponible durante todo el retiro</li><li>Ceremonias a cargo de sanadores andinos (Rumira y Q’eros) y amazónicos (Shipibo)</li><li>Alimentación buffet 100% vegetariana y vegana</li></ul></div></div>
+                <div class="mx-split rev">
+                    <div class="mx-photo"><img data-wx="04" src="assets/wachuma/04.jpg" alt="Acompañamiento ceremonial junto al fuego" loading="lazy" style="object-position:30% 35%"></div>
+                    <div class="mx-text"><h4>Preguntas frecuentes</h4><div class="mx-faq">
+<details><summary>¿Dónde se realiza el retiro?</summary><p>En nuestro santuario ceremonial, a 2 km de Ollantaytambo rumbo al Camino Inka, en la comunidad de Rumira (hotel High Garden). Las ceremonias de Wachuma también se realizan en Cusco, Pisac, el Valle Sagrado, Machu Picchu y Manu.</p></details>
+<details><summary>¿Quién guía la ceremonia?</summary><p>Un guía espiritual o chamán con un camino de aprendizaje de aproximadamente 5 a 10 años, que conoce las técnicas ancestrales de acompañamiento y protección de los participantes. Según esta visión, el guía es un canal y todos somos iguales como maestros.</p></details>
+<details><summary>¿Qué importancia tiene la música medicinal?</summary><p>La música medicinal o ícaros es central: el guía canta y toca instrumentos para acompañar la ceremonia y ayudar a cada persona a conectar con su ser interior.</p></details>
+<details><summary>¿Cuánto dura la ceremonia?</summary><p>Aproximadamente de 5 a 12 horas, conducida por un guía espiritual o chamán. Quien lo desea puede realizar varias ceremonias consecutivas; cada una se vive como un proceso distinto.</p></details>
+</div></div>
+                </div>
+                <p class="mx-note">El precio incluye lo detallado en cada modalidad. Para la experiencia privada para 2 personas de 6 – 7 horas, ver la propuesta anterior.</p>
+                <div style="text-align:center"><a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Retiro%20de%20Wachuma%20(Full%20Day%20%2F%202%20d%C3%ADas%201%20noche)." target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Consultar el retiro por WhatsApp</a></div>
+            </div>
+
+        <!-- ============ EXPERIENCIA AYAHUASCA ============ -->
+        <div class="mx" id="ayahuasca">
+            <div class="mx-head"><div class="mx-ico"><i class="fas fa-leaf"></i></div><span class="mx-badge">Servicio 02</span><small>Valle Sagrado · Calca · Cusco</small><h3>Ayahuasca</h3><p class="mystic-lead">Experiencia de Purificación: una medicina ancestral de la Amazonía peruana, en un espacio ceremonial acompañado y protegido.</p></div>
+
+            <div class="mx-split">
+                <div class="mx-photo"><img src="assets/misticos/ayahuasca-santuario.webp" alt="Sala ceremonial del retiro de Ayahuasca" loading="lazy"></div>
+                <div class="mx-text">
+                    <h4>¿Qué es la Ayahuasca?</h4>
+                    <p>La Ayahuasca es una planta medicinal tradicional utilizada por diversas culturas amazónicas del Perú, parte de la identidad y de la tradición viva del país. La ceremonia dura aproximadamente de 3 a 5 horas y es conducida por un guía espiritual o chamán.</p>
+                    <p>Quienes la viven la describen como un camino de introspección: mirar el pasado, el presente y el futuro, soltar cargas emocionales y reconectar con su esencia. Cada experiencia es personal y distinta.</p>
+                    <p class="quote">“Mira tu pasado, presente y futuro.”</p>
+                    <div class="mx-chips"><span>Purificación</span><span>Meditación Energética Inca</span><span>Medicina musical</span></div>
+                </div>
+            </div>
+
+            <h4 class="mx-sub">Modalidades y tarifas</h4>
+            <div class="mx-prices">
+                <div class="mystic-card"><i class="fas fa-sun"></i><h5>Full Day</h5><span class="amt">S/ 650</span><p>Un día de ceremonia, ida y vuelta desde Cusco · 7:00 a.m. – 3:30 p.m.</p></div>
+                <div class="mystic-card"><i class="fas fa-users"></i><h5>2 días / 1 noche · Grupal</h5><span class="amt">S/ 950</span><p>Pernocte en el santuario y ceremonia en grupo reducido (máximo 6 personas).</p></div>
+                <div class="mystic-card"><i class="fas fa-user"></i><h5>2 días / 1 noche · Privado</h5><span class="amt">S/ 1,100</span><p>Experiencia privada con atención personalizada durante todo el retiro.</p></div>
+            </div>
+            <p class="mx-note" style="margin-bottom:3rem">Precios en soles peruanos (S/) por persona. Consulta la disponibilidad de fechas.</p>
+
+            <h4 class="mx-sub">Qué incluye</h4>
+            <div class="mx-cols">
+                <div class="mx-box"><h5>Ceremonia de retiro espiritual</h5><ul><li>Introducción a la medicina ancestral</li><li>Experiencia de Ayahuasca</li><li>Explicación de las visiones</li><li>Limpieza y protección energética</li><li>Meditación Energética Inca</li><li>Medicina musical (ícaros)</li><li>Infusiones medicinales</li></ul></div>
+                <div class="mx-box"><h5>Acompañamiento y logística</h5><ul><li>Consulta médica previa en la clínica San José</li><li>Cuestionario de salud física y psicológica</li><li>Transporte privado ida y retorno Cusco – centro ceremonial</li><li>Staff presente durante toda la ceremonia y control físico al finalizar</li><li>Grupos reducidos de máximo 6 personas</li></ul></div>
+            </div>
+
+            <h4 class="mx-sub">Itinerario · Retiro Full Day</h4>
+            <div class="mx-cols" style="grid-template-columns:minmax(0,560px);justify-content:center">
+                <div class="mx-box"><h5>Retiro de Ayahuasca · Full Day</h5><ul><li><b>7:00 a.m.</b>Salida del hotel – centro ceremonial</li><li><b>8:00 a.m.</b>Introducción a la ceremonia y sus efectos</li><li><b>8:20 a.m.</b>Explicación de la Meditación Energética Inca</li><li><b>8:40 a.m.</b>Limpieza andina y protección energética</li><li><b>9:00 a.m.</b>Toma de la medicina Ayahuasca</li><li><b>1:00 p.m.</b>Interpretación de las visiones</li><li><b>2:30 p.m.</b>Charla final</li><li><b>3:30 p.m.</b>Regreso a Cusco</li></ul></div>
+            </div>
+            <p class="mx-note">El detalle del itinerario de 2 días / 1 noche se confirma al reservar.</p>
+
+            <div class="mx-split rev">
+                <div class="mx-photo"><img src="assets/misticos/ayahuasca-guia.webp" alt="Guía ceremonial con tambor ancestral" loading="lazy"></div>
+                <div class="mx-text">
+                    <h4>Tu guía y el santuario</h4>
+                    <p>Las ceremonias están a cargo de sanadores con tradición familiar de chamanismo: andinos (Rumira y Q’eros), amazónicos (Shipibo) y especialistas en naturopatía y psicología (español – alemán).</p>
+                    <p>Nuestro santuario ceremonial se encuentra en el Valle Sagrado, en el santuario de sanación Sircadia, a 5 minutos de la plaza de armas de Calca.</p>
+                    <p>La bebida es una mezcla simple de liana de Ayahuasca (<em>Banisteriopsis caapi</em>) y arbusto de Chacruna (<em>Psychotria viridis</em>); no se agrega nada más.</p>
+                    <div class="mx-chips"><a href="https://air.tl/AZkPsv4B" target="_blank" rel="noopener" style="border:1px solid rgba(201,169,97,.5);color:var(--gold);padding:.4rem 1rem;border-radius:50px;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none"><i class="fas fa-house"></i> Ver alojamiento</a><a href="https://maps.app.goo.gl/qgtZ5gTTwKKPnKfa6" target="_blank" rel="noopener" style="border:1px solid rgba(201,169,97,.5);color:var(--gold);padding:.4rem 1rem;border-radius:50px;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none"><i class="fas fa-location-dot"></i> Cómo llegar (GPS)</a></div>
+                </div>
+            </div>
+
+            <h4 class="mx-sub">Preparación y seguridad</h4>
+            <div class="mx-cols">
+                <div class="mx-box"><h5>Dieta previa</h5><ul><li>Dieta de 1, 2 o 3 días antes (mínimo 24 horas; más días, mejor)</li><li>Frutas y verduras, mucha agua, mate de coca y descanso temprano</li><li>Sin sal, azúcar, carne de ningún tipo, frituras, gaseosas, cigarros, alcohol, caramelos ni nada artificial; sin relaciones sexuales</li><li>Continuar la dieta 1 o 2 días después de la ceremonia</li><li>Infórmanos tu medicación al reservar, en especial antidepresivos; no la suspendas por tu cuenta sin consultar a tu médico</li></ul></div>
+                <div class="mx-box warn"><h5>No pueden participar</h5><ul><li>Quienes no hayan hecho la dieta mínima de 24 horas</li><li>Mujeres embarazadas</li><li>Personas con problemas cardíacos</li><li>Personas con epilepsia</li><li>Personas con esquizofrenia u otros problemas de salud mental</li><li>Quienes buscan “experimentar” o drogarse</li><li>Nunca combinar con alcohol u otras drogas</li></ul></div>
+                <div class="mx-box"><h5>Seguridad y acompañamiento</h5><ul><li>Cuestionario de salud física y psicológica para evaluar factores de riesgo</li><li>Convenio con la clínica San José para consultas y emergencias</li><li>Cardiólogo aliado (no presente en el sitio) para casos específicos</li><li>Seguimiento con psicólogo disponible si es necesario</li><li>Transfer y enfermero(a) a disposición durante la experiencia</li><li>Control físico al finalizar para asegurar que cada persona esté tranquila y estable</li><li>Transporte privado disponible durante todo el retiro</li></ul></div>
+            </div>
+            <p class="mx-small" style="text-align:center;max-width:720px;margin:0 auto 2rem">Esta experiencia es de carácter espiritual y cultural; no sustituye diagnóstico ni tratamiento médico. Antes de reservar, consúltanos sobre tu estado de salud y medicación.</p>
+
+            <div style="text-align:center"><a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20Experiencia%20de%20Purificaci%C3%B3n%20con%20Ayahuasca." target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Reservar Ayahuasca por WhatsApp</a></div>
+        </div>
+
+        <!-- ============ BAÑO DE FLORECIMIENTO ============ -->
+        <div class="mx" id="bano-florecimiento">
+            <div class="mx-head"><div class="mx-ico"><i class="fas fa-spa"></i></div><span class="mx-badge">Servicio 03</span><small>Cusco · Perú</small><h3>Baño de Florecimiento</h3><p class="mystic-lead">Las Yerberas · Limpieza y purificación con flores, hierbas, sales y cuarzos.</p></div>
+
+            <div class="mx-split">
+                <div class="mx-text">
+                    <h4>Un ritual de limpieza y renovación</h4>
+                    <p>El baño de florecimiento es un ritual andino de purificación que utiliza flores, hierbas aromáticas, sales y cuarzos para cerrar ciclos, renovar la energía y prepararse para un nuevo comienzo. Puede vivirse como un servicio independiente o como complemento de tu ceremonia.</p>
+                    <p class="quote">“Restablece tu energía con los elementos ancestrales de la Madre Naturaleza.”</p>
+                    <div class="mx-chips"><span>Limpieza</span><span>Purificación</span><span>Renovación</span></div>
+                </div>
+                <div class="mx-grid" style="margin-bottom:0;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))">
+                    <div class="mystic-card"><i class="fas fa-water"></i><h5>Sal marina</h5><p>Limpia y descarga.</p></div>
+                    <div class="mystic-card"><i class="fas fa-leaf"></i><h5>Ruda, romero y retama</h5><p>Hierbas de protección y limpieza.</p></div>
+                    <div class="mystic-card"><i class="fas fa-fan"></i><h5>Pétalos de rosa</h5><p>Aroma, armonía y apertura del corazón.</p></div>
+                    <div class="mystic-card"><i class="fas fa-gem"></i><h5>Cuarzo</h5><p>Cristal que acompaña la intención.</p></div>
+                </div>
+            </div>
+
+            <h4 class="mx-sub">Tipos de baño</h4>
+            <div class="mx-cols">
+                <div class="mx-box"><h5>Limpieza y purificación</h5><ul><li>Sal marina, ruda, romero y retama</li><li>Pétalos de rosa</li><li>Cuarzo transparente</li><li>Ideal para soltar cargas y renovar la energía</li></ul></div>
+                <div class="mx-box"><h5>Amor y abundancia</h5><ul><li>Sal marina, ruda, laurel y alucema</li><li>Pétalos de rosa, clavo de olor, canela y puchuli</li><li>Cuarzo rosado</li><li>Para cerrar ciclos, sanar el cuerpo y el alma, y atraer armonía</li></ul></div>
+                <div class="mx-box"><h5>Prosperidad</h5><ul><li>Laurel y canela, ingredientes tradicionalmente asociados a la buena fortuna</li><li>Para abrir caminos y recibir nuevas oportunidades</li></ul></div>
+            </div>
+
+            <div class="mx-price" style="grid-template-columns:1fr;text-align:center;justify-items:center">
+                <div class="mx-text">
+                    <h4>Reserva tu baño de florecimiento</h4>
+                    <p>Cuéntanos qué buscas (limpieza, amor, prosperidad) y preparamos el baño para ti. Consulta la tarifa y la disponibilidad por WhatsApp.</p>
+                    <a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Ba%C3%B1o%20de%20Florecimiento%20%E2%80%93%20Las%20Yerberas%20%28limpieza%29." target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Consultar por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
     <!-- EQUIPO -->
     <section class="team" id="equipo">
         <div class="container">
@@ -2651,6 +2965,15 @@
                             <label for="tour">Tour de interés *</label>
                             <select id="tour" required>
                                 <option value="">Selecciona un tour...</option>
+                                <optgroup label="Turismo Místico">
+                                    <option>Wachuma – Experiencia privada para 2</option>
+                                    <option>Wachuma – Retiro Full Day</option>
+                                    <option>Wachuma – Retiro 2 días / 1 noche</option>
+                                    <option>Ayahuasca – Full Day (S/ 650)</option>
+                                    <option>Ayahuasca – 2 días / 1 noche Grupal (S/ 950)</option>
+                                    <option>Ayahuasca – 2 días / 1 noche Privado (S/ 1,100)</option>
+                                    <option>Baño de Florecimiento – Las Yerberas</option>
+                                </optgroup>
                                 <optgroup label="Machu Picchu">
                                     <option>MAPI Full Day Tren Expeditions</option>
                                     <option>MAPI Full Day Tren Local</option>
@@ -2770,6 +3093,7 @@
                 <a href="#catalogos">Cusco Tradicional</a>
                 <a href="#catalogos">Perú Profundo</a>
                 <a href="#aventura">Cusco Aventura</a>
+                <a href="#misticos">Turismo Místico</a>
             </div>
 
             <div class="footer-col">
@@ -2931,7 +3255,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.tour-card, .region-card, .adventure-card, .team-card').forEach(el => {
+        document.querySelectorAll('.tour-card, .region-card, .adventure-card, .team-card, .mystic-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'all 0.6s ease';
@@ -2952,5 +3276,15 @@
             });
         });
     </script>
+<script>
+/* Fotos de Wachuma: carga assets/wachuma/NN.(jpg|jpeg|webp|png) según la extensión que tenga cada archivo */
+(function(){
+  var exts=['jpg','jpeg','webp','png','JPG','JPEG','WEBP','PNG'];
+  document.querySelectorAll('img[data-wx]').forEach(function(img){
+    var n=img.getAttribute('data-wx'),i=1;
+    img.addEventListener('error',function(){ if(i<exts.length){ img.src='assets/wachuma/'+n+'.'+exts[i++]; } });
+  });
+})();
+</script>
 </body>
 </html>
