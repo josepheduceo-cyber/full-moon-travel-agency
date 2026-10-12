@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Luna Llena Travel - Operadores directos en Cusco. Tours a Machu Picchu, Valle Sagrado, Montaña de Colores, Laguna Humantay y más. Temporada 2026.">
-    <meta name="keywords" content="tours cusco, machu picchu, valle sagrado, montaña de colores, laguna humantay, luna llena travel, agencia de viajes cusco">
-    <title>Luna Llena Travel | Operadores Directos en Cusco - Temporada 2026</title>
+    <meta name="description" content="Luna Llena Tours - Operadores directos en Cusco. Tours a Machu Picchu, Valle Sagrado, Montaña de Colores, Laguna Humantay y más. Temporada 2026.">
+    <meta name="keywords" content="tours cusco, machu picchu, valle sagrado, montaña de colores, laguna humantay, luna llena tours, agencia de viajes cusco">
+    <title>Luna Llena Tours | Operadores Directos en Cusco - Temporada 2026</title>
     
     <link rel="icon" href="assets/logo.png">
     
@@ -628,6 +628,29 @@
             background: var(--accent);
             color: var(--primary);
         }
+
+
+        /* ============================================
+           BOLETOS Y ENTRADAS
+        ============================================ */
+        .tour-price-note { font-size: 0.78rem; color: #777; margin: 0 0 0.9rem; line-height: 1.4; }
+        .tickets { background: var(--light); }
+        .tickets-top { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 2rem; align-items: center; margin-bottom: 3rem; }
+        .tickets-top img { width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.15); }
+        .tickets-top p { color: #555; line-height: 1.7; margin-bottom: 0.8rem; }
+        .tickets-block { background: #fff; border-radius: 16px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 18px rgba(0,0,0,.07); }
+        .tickets-block h3 { color: var(--primary); margin-bottom: 1.2rem; }
+        .circuits { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 1.2rem; }
+        .circuit { border: 1px solid #eee; border-left: 4px solid var(--accent); border-radius: 10px; padding: 1.2rem; }
+        .circuit h4 { color: var(--secondary); margin-bottom: 0.4rem; }
+        .circuit .vig { font-size: 0.8rem; font-weight: 700; color: #888; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .circuit p { font-size: 0.9rem; color: #555; line-height: 1.5; }
+        .rates-wrap { overflow-x: auto; margin-top: 1.5rem; }
+        .rates { width: 100%; border-collapse: collapse; min-width: 420px; }
+        .rates th, .rates td { padding: 0.8rem 1rem; text-align: left; border-bottom: 1px solid #eee; font-size: 0.92rem; }
+        .rates th { background: var(--primary); color: #fff; }
+        .rates td:last-child { font-weight: 700; color: var(--secondary); white-space: nowrap; }
+        .tickets-note { font-size: 0.82rem; color: #777; margin-top: 1rem; line-height: 1.5; }
 
         /* ============================================
            REGIONES PERÚ PROFUNDO
@@ -1380,16 +1403,17 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="assets/logo.png" class="logo-img" id="logoImg" alt="Luna Llena Travel - Full Moon Travel Agency">
+                <img src="assets/logo.png" class="logo-img" id="logoImg" alt="Luna Llena Tours">
                 <div class="logo-text">
                     LUNA LLENA
-                    <span>TRAVEL | ADVENTURE CO.</span>
+                    <span>TOURS | ADVENTURE CO.</span>
                 </div>
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#catalogos">Tours</a></li>
+                <li><a href="#entradas">Entradas</a></li>
                 <li><a href="#aventura">Aventura</a></li>
                 <li><a href="#misticos">Místico</a></li>
                 <li><a href="#equipo">Guías</a></li>
@@ -1406,7 +1430,7 @@
     <section class="hero" id="inicio">
         <div class="hero-frame" id="heroFrame">
             <div class="hero-frame-inner">
-                <img class="hero-img" id="heroImg" alt="Luna Llena Travel - Valle Sagrado, Moray, Machu Picchu, Montaña de Colores y Humantay" decoding="async" fetchpriority="high">
+                <img class="hero-img" id="heroImg" alt="Luna Llena Tours - Valle Sagrado, Moray, Machu Picchu, Montaña de Colores y Humantay" decoding="async" fetchpriority="high">
                 <span class="hero-shine"></span>
             </div>
         </div>
@@ -1436,7 +1460,7 @@
             </div>
             <div class="about-grid">
                 <div class="about-image">
-                    <img id="nosotrosImg" alt="Luna Llena Travel - Machu Picchu" decoding="async">
+                    <img id="nosotrosImg" alt="Luna Llena Tours - Machu Picchu" decoding="async">
                 </div>
                 <div class="about-content">
                     <h3>Maravilla del Mundo - Temporada 2026</h3>
@@ -1510,8 +1534,9 @@
                                     <li>Box lunch</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">Extranjeros US$ 335 · Nacionales US$ 295</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">US$ 335</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1668,8 +1693,9 @@
                                     <li>Guía profesional</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">Extranjeros: Básico US$ 195 · Premium US$ 220 · VIP US$ 285<br>Nacionales: Básico US$ 145 · Premium US$ 180 · VIP US$ 210</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">Desde US$ 195</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1700,8 +1726,9 @@
                                     <li>Guía profesional</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">Extranjeros US$ 395 · Nacionales US$ 350</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">US$ 395</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1971,8 +1998,9 @@
                                     <li>Botella de agua + snack</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">S/ 85 · S/ 105 · S/ 130 por persona, según el restaurante buffet elegido</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">Desde S/ 85</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2002,8 +2030,9 @@
                                     <li>Guía bilingüe</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">S/ 90 · S/ 110 por persona, según el restaurante buffet elegido</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">Desde S/ 90</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2033,8 +2062,9 @@
                                     <li>Guía bilingüe</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">S/ 90 · S/ 110 por persona, según el restaurante buffet elegido</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">Desde S/ 90</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2063,8 +2093,9 @@
                                     <li>Botella de agua + snack</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">Precio por persona</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">S/ 35</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2093,8 +2124,9 @@
                                     <li>Botella de agua + snack</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">Precio por persona</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">S/ 50</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2124,8 +2156,9 @@
                                     <li>Botella de agua + snack</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">Precio por persona</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">S/ 120</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2154,8 +2187,9 @@
                                     <li>Botella de agua + snack</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">Precio por persona</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">S/ 170</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2185,8 +2219,9 @@
                                     <li>Botella de agua + snack</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">S/ 100 · S/ 130 por persona, según el restaurante buffet elegido</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">Desde S/ 100</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2215,8 +2250,9 @@
                                     <li>Transfer profesional</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">Precio por persona</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">S/ 390</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2246,8 +2282,9 @@
                                     <li>Botella de agua + snack</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">Precio por persona</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">S/ 110</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2277,8 +2314,9 @@
                                     <li>Balón de oxígeno</li>
                                 </ul>
                             </div>
+                            <p class="tour-price-note">Precio por persona</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price">S/ 120</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2307,6 +2345,262 @@
                             </div>
                             <div class="tour-footer">
                                 <span class="tour-price" style="color: #25d366;">¡GRATIS!</span>
+                                <a href="#contacto" class="tour-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- NUEVOS TOURS 2026 -->
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="assets/cusco.tradicional/city.tour.cusco.jpg" alt="City Tour Realidad Virtual" loading="lazy">
+                            <span class="tour-badge">Half Day</span>
+                        </div>
+                        <div class="tour-content">
+                            <span class="tour-category">Cultural</span>
+                            <h3 class="tour-title">City Tour con Realidad Virtual</h3>
+                            <div class="tour-duration">
+                                <i class="far fa-clock"></i> Medio día | <i class="fas fa-signal"></i> Fácil
+                            </div>
+                            <p class="tour-description">Recorre Q’enqo, Tambomachay, Puca Pucara, Saqsayhuamán y Qoricancho con visores de realidad virtual que reconstruyen cómo eran estos lugares en tiempos incas: ceremonias, plazas y templos que hoy ya no existen.</p>
+                            <div class="tour-includes">
+                                <h4>Incluye:</h4>
+                                <ul>
+                                    <li>Recojo de hotel</li>
+                                    <li>Transporte turístico</li>
+                                    <li>Guía profesional bilingüe</li>
+                                    <li>Experiencia de realidad virtual en varios puntos</li>
+                                </ul>
+                            </div>
+                            <div class="tour-includes">
+                                <h4>No incluye:</h4>
+                                <ul>
+                                    <li>Boleto turístico del Cusco</li>
+                                    <li>Ingreso al Convento de Santo Domingo</li>
+                                </ul>
+                            </div>
+                            <p class="tour-price-note">Sujeto a confirmación previa de disponibilidad</p>
+                            <div class="tour-footer">
+                                <span class="tour-price">Consultar</span>
+                                <a href="#contacto" class="tour-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="assets/cusco.tradicional/city.tour.cusco.jpg" alt="5 Ruinas con Caminata" loading="lazy">
+                            <span class="tour-badge">Privado</span>
+                        </div>
+                        <div class="tour-content">
+                            <span class="tour-category">Arqueológico · Exclusivo</span>
+                            <h3 class="tour-title">5 Ruinas: Saqsayhuamán, Q’enqo, Tambomachay, Puka Pukara e Inkilltambo</h3>
+                            <div class="tour-duration">
+                                <i class="far fa-clock"></i> Medio día | <i class="fas fa-signal"></i> Moderada
+                            </div>
+                            <p class="tour-description">Servicio privado: el circuito clásico de las ruinas altas del Cusco y una caminata suave de unas 2 h 30 min por senderos, andenes y miradores hasta Inkilltambo, antiguo centro administrativo y ceremonial inca.</p>
+                            <div class="tour-includes">
+                                <h4>Incluye:</h4>
+                                <ul>
+                                    <li>Recojo de hotel</li>
+                                    <li>Vehículo privado a elección (camioneta, H1 Staria o Sprinter)</li>
+                                    <li>Guía profesional en español e inglés</li>
+                                    <li>Agua mineral y snack por pasajero</li>
+                                </ul>
+                            </div>
+                            <div class="tour-includes">
+                                <h4>No incluye:</h4>
+                                <ul>
+                                    <li>Boleto turístico del Cusco</li>
+                                    <li>Desayunos ni almuerzos</li>
+                                </ul>
+                            </div>
+                            <p class="tour-price-note">Precio según el vehículo y el número de pasajeros</p>
+                            <div class="tour-footer">
+                                <span class="tour-price">Consultar</span>
+                                <a href="#contacto" class="tour-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="assets/cusco.tradicional/maras.moray.jpg" alt="Maras Vivencial" loading="lazy">
+                            <span class="tour-badge">Full Day</span>
+                        </div>
+                        <div class="tour-content">
+                            <span class="tour-category">Vivencial · Cultural</span>
+                            <h3 class="tour-title">Maras Vivencial</h3>
+                            <div class="tour-duration">
+                                <i class="far fa-clock"></i> 1 día | <i class="fas fa-signal"></i> Fácil
+                            </div>
+                            <p class="tour-description">Cuatro vivencias en un solo día: textilería en Chinchero, convivencia con la comunidad de Misminay, sesión de medicina andina y preparación de una pachamanca ancestral que se disfruta en el almuerzo. Por la tarde, Moray y las Salineras de Maras.</p>
+                            <div class="tour-includes">
+                                <h4>Incluye:</h4>
+                                <ul>
+                                    <li>Recojo de hotel</li>
+                                    <li>Transporte turístico</li>
+                                    <li>Guía profesional en español e inglés</li>
+                                    <li>Almuerzo tradicional (pachamanca)</li>
+                                    <li>Las cuatro experiencias vivenciales</li>
+                                </ul>
+                            </div>
+                            <div class="tour-includes">
+                                <h4>No incluye:</h4>
+                                <ul>
+                                    <li>Boleto turístico del Cusco</li>
+                                    <li>Ingreso a las Salineras de Maras</li>
+                                    <li>Desayuno</li>
+                                </ul>
+                            </div>
+                            <p class="tour-price-note">Servicio privado · el precio depende del número de pasajeros</p>
+                            <div class="tour-footer">
+                                <span class="tour-price">Consultar</span>
+                                <a href="#contacto" class="tour-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="assets/cusco.tradicional/vinicunca.webp" alt="Pallay Punchu" loading="lazy">
+                            <span class="tour-badge">Full Day</span>
+                        </div>
+                        <div class="tour-content">
+                            <span class="tour-category">Naturaleza</span>
+                            <h3 class="tour-title">Montaña Pallay Punchu</h3>
+                            <div class="tour-duration">
+                                <i class="far fa-clock"></i> 1 día | <i class="fas fa-signal"></i> Moderada
+                            </div>
+                            <p class="tour-description">Una alternativa menos concurrida a la Montaña de Colores: ascenso de unos 30 minutos hasta la cima de Pallay Punchu, con vistas de franjas multicolores. Al regreso, parada opcional en el complejo arqueológico de Raqchi.</p>
+                            <div class="tour-includes">
+                                <h4>Incluye:</h4>
+                                <ul>
+                                    <li>Recojo de hotel</li>
+                                    <li>Transporte turístico</li>
+                                    <li>Guía profesional bilingüe</li>
+                                    <li>Desayuno y almuerzo buffet</li>
+                                    <li>Bastones</li>
+                                </ul>
+                            </div>
+                            <div class="tour-includes">
+                                <h4>No incluye:</h4>
+                                <ul>
+                                    <li>Ingreso a la montaña</li>
+                                    <li>Ingreso a Raqchi (opcional)</li>
+                                </ul>
+                            </div>
+                            <p class="tour-price-note">Nacionales S/ 110 · Extranjeros S/ 120</p>
+                            <div class="tour-footer">
+                                <span class="tour-price">Desde S/ 110</span>
+                                <a href="#contacto" class="tour-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="assets/cusco.aventura/Cuatrimotos%20%28ATV%29.jpg" alt="Cuatrimotos Valle Rojo y Montaña de Colores" loading="lazy">
+                            <span class="tour-badge">Aventura</span>
+                        </div>
+                        <div class="tour-content">
+                            <span class="tour-category">Aventura · Naturaleza</span>
+                            <h3 class="tour-title">Cuatrimotos en Valle Rojo + Montaña de Colores</h3>
+                            <div class="tour-duration">
+                                <i class="far fa-clock"></i> 1 día | <i class="fas fa-signal"></i> Moderada
+                            </div>
+                            <p class="tour-description">Sube en cuatrimoto hasta el mirador del Valle Rojo, camina unos 20 minutos hasta la Montaña de Colores y regresa a la base para almorzar. Incluye instrucción previa de manejo.</p>
+                            <div class="tour-includes">
+                                <h4>Incluye:</h4>
+                                <ul>
+                                    <li>Recojo de hotel</li>
+                                    <li>Transporte turístico</li>
+                                    <li>Guía profesional bilingüe</li>
+                                    <li>Cuatrimoto simple o doble</li>
+                                    <li>Desayuno y almuerzo buffet</li>
+                                    <li>Bastones</li>
+                                </ul>
+                            </div>
+                            <div class="tour-includes">
+                                <h4>No incluye:</h4>
+                                <ul>
+                                    <li>Ingreso a la montaña</li>
+                                </ul>
+                            </div>
+                            <p class="tour-price-note">Por cuatrimoto: simple S/ 190 · doble S/ 290 (incluye desayuno y almuerzo para ambos)</p>
+                            <div class="tour-footer">
+                                <span class="tour-price">Desde S/ 190</span>
+                                <a href="#contacto" class="tour-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="assets/cusco.aventura/Cuatrimotos%20%28ATV%29.jpg" alt="Cuatrimotos Maras y Moray" loading="lazy">
+                            <span class="tour-badge">Medio día</span>
+                        </div>
+                        <div class="tour-content">
+                            <span class="tour-category">Aventura</span>
+                            <h3 class="tour-title">Cuatrimotos Maras y Moray</h3>
+                            <div class="tour-duration">
+                                <i class="far fa-clock"></i> Medio día | <i class="fas fa-signal"></i> Moderada
+                            </div>
+                            <p class="tour-description">Dos horas de manejo en cuatrimoto entre campos y comunidades hasta las terrazas de Moray, con vistas de los nevados Verónica y Chicón; después, visita a las Salineras de Maras en movilidad.</p>
+                            <div class="tour-includes">
+                                <h4>Incluye:</h4>
+                                <ul>
+                                    <li>Recojo de hotel</li>
+                                    <li>Transporte turístico</li>
+                                    <li>Guía profesional</li>
+                                    <li>Cuatrimoto simple o doble</li>
+                                </ul>
+                            </div>
+                            <div class="tour-includes">
+                                <h4>No incluye:</h4>
+                                <ul>
+                                    <li>Ingreso a las Salineras de Maras</li>
+                                    <li>Boleto turístico del Cusco</li>
+                                </ul>
+                            </div>
+                            <p class="tour-price-note">Por cuatrimoto: simple S/ 120 · doble S/ 170</p>
+                            <div class="tour-footer">
+                                <span class="tour-price">Desde S/ 120</span>
+                                <a href="#contacto" class="tour-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="assets/cusco.aventura/Cuatrimotos%20%28ATV%29.jpg" alt="Cuatrimotos Morada de los Dioses y Laguna Piuray" loading="lazy">
+                            <span class="tour-badge">Medio día</span>
+                        </div>
+                        <div class="tour-content">
+                            <span class="tour-category">Aventura</span>
+                            <h3 class="tour-title">Cuatrimotos Morada de los Dioses + Laguna Piuray</h3>
+                            <div class="tour-duration">
+                                <i class="far fa-clock"></i> Medio día | <i class="fas fa-signal"></i> Moderada
+                            </div>
+                            <p class="tour-description">Recorrido de 50 km en cuatrimoto (unas 2 h 30 min) por la Morada de los Dioses, con sus esculturas talladas en roca y madera, y la Laguna de Piuray. Incluye charla de seguridad y práctica previa.</p>
+                            <div class="tour-includes">
+                                <h4>Incluye:</h4>
+                                <ul>
+                                    <li>Recojo en Plaza Regocijo o centro de Cusco</li>
+                                    <li>Transporte turístico</li>
+                                    <li>Guía profesional</li>
+                                    <li>Cuatrimoto simple o doble</li>
+                                </ul>
+                            </div>
+                            <div class="tour-includes">
+                                <h4>No incluye:</h4>
+                                <ul>
+                                    <li>Ingresos adicionales según la ruta elegida</li>
+                                </ul>
+                            </div>
+                            <p class="tour-price-note">Por cuatrimoto: simple S/ 120 · doble S/ 170</p>
+                            <div class="tour-footer">
+                                <span class="tour-price">Desde S/ 120</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -2422,6 +2716,66 @@
     </section>
 
     <!-- AVENTURA -->
+
+    <!-- ============ BOLETOS Y ENTRADAS ============ -->
+    <section class="tickets" id="entradas">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Antes de viajar</p>
+                <h2 class="section-title">Boletos y Entradas 2026</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="tickets-top">
+                <img id="boletoImg" alt="Boleto Turístico del Cusco" loading="lazy" decoding="async">
+                <div>
+                    <p>Muchos de nuestros tours visitan sitios arqueológicos que requieren entrada aparte del precio del servicio. En Luna Llena Tours te orientamos para que elijas el boleto que más te conviene según los lugares que vas a visitar.</p>
+                    <p>Tienes dos opciones: el <strong>Boleto Turístico del Cusco</strong> para la ciudad y sus alrededores, y la <strong>entrada a Machu Picchu</strong>, que se compra por separado y con anticipación.</p>
+                </div>
+            </div>
+
+            <div class="tickets-block">
+                <h3><i class="fas fa-ticket-alt"></i> Boleto Turístico del Cusco</h3>
+                <div class="circuits">
+                    <div class="circuit"><h4>Circuito I · Zona Alta</h4><div class="vig">Vigencia: 1 día</div><p>Saqsayhuamán, Q’enqo, Puka Pukara y Tambomachay.</p></div>
+                    <div class="circuit"><h4>Circuito II · Museos, Ciudad y Valle Sur</h4><div class="vig">Vigencia: 2 días</div><p>Museos de la ciudad (Qorikancha, Histórico Regional, Arte Contemporáneo y Arte Popular), Monumento a Pachacuteq, Centro Qosqo de Arte Nativo, y los parques de Tipón y Pikillaqta.</p></div>
+                    <div class="circuit"><h4>Circuito III · Valle Sagrado</h4><div class="vig">Vigencia: 2 días</div><p>Parques arqueológicos de Ollantaytambo, Pisac, Chinchero y Moray.</p></div>
+                </div>
+                <div class="circuits" style="margin-top:1.5rem">
+                    <div>
+                        <h4 style="color:var(--secondary)">Turistas extranjeros</h4>
+                        <div class="rates-wrap"><table class="rates"><thead><tr><th>Boleto</th><th>Tarifa</th></tr></thead><tbody><tr><td>Integral general (16 atractivos, 10 días)</td><td>S/ 130</td></tr><tr><td>Integral estudiantes (18 a 25 años, carné vigente o ISIC)</td><td>S/ 70</td></tr><tr><td>Parcial (un circuito I, II o III)</td><td>S/ 70</td></tr></tbody></table></div>
+                    </div>
+                    <div>
+                        <h4 style="color:var(--secondary)">Turistas nacionales</h4>
+                        <div class="rates-wrap"><table class="rates"><thead><tr><th>Boleto</th><th>Tarifa</th></tr></thead><tbody><tr><td>Integral general</td><td>S/ 70</td></tr><tr><td>Integral estudiantes y menores</td><td>S/ 40</td></tr></tbody></table></div>
+                    </div>
+                </div>
+                <p class="tickets-note">Para las tarifas reducidas se presenta la documentación que acredite la categoría en boletería.</p>
+            </div>
+
+            <div class="tickets-block">
+                <h3><i class="fas fa-mountain"></i> Entrada a Machu Picchu</h3>
+                <div class="circuits">
+                    <div class="circuit"><h4>Circuito 1 · Panorámico</h4><div class="vig">Vista clásica</div><p>Incluye la foto tradicional desde la terraza superior y permite caminatas opcionales a Intipunku, Puente Inca o Montaña Machu Picchu.</p></div>
+                    <div class="circuit"><h4>Circuito 2 · Clásico</h4><div class="vig">Recorrido completo</div><p>El recorrido tradicional más completo por la llacta: zona urbana y agrícola, Intihuatana y Templo del Sol.</p></div>
+                    <div class="circuit"><h4>Circuito 3 · Realeza / Zona inferior</h4><div class="vig">Con montañas</div><p>Pensado para ingresos desde el Camino Inca o para quienes suben Waynapicchu o Huchuy Picchu.</p></div>
+                </div>
+                <div class="circuits" style="margin-top:1.5rem">
+                    <div>
+                        <h4 style="color:var(--secondary)">Visitantes extranjeros</h4>
+                        <div class="rates-wrap"><table class="rates"><thead><tr><th>Categoría</th><th>Tarifa</th></tr></thead><tbody><tr><td>Adultos</td><td>S/ 152</td></tr><tr><td>Estudiantes de educación superior</td><td>S/ 77</td></tr><tr><td>Menores de 3 a 17 años</td><td>S/ 70</td></tr></tbody></table></div>
+                    </div>
+                    <div>
+                        <h4 style="color:var(--secondary)">Nacionales y países de la CAN</h4>
+                        <div class="rates-wrap"><table class="rates"><thead><tr><th>Categoría</th><th>Tarifa</th></tr></thead><tbody><tr><td>Adulto general (circuitos clásicos)</td><td>S/ 64</td></tr><tr><td>Estudiantes y menores de 3 a 17 años</td><td>S/ 32</td></tr><tr><td>Rutas especiales con Huayna Picchu o montañas (adultos)</td><td>S/ 112</td></tr></tbody></table></div>
+                    </div>
+                </div>
+                <p class="tickets-note"><strong>Dónde comprarla:</strong> en línea en la plataforma oficial tuboleto.cultura.pe (reserva con meses de anticipación en temporada alta) o de forma presencial en el centro cultural de Machu Picchu Pueblo, que vende hasta 1,000 boletos diarios y requiere hacer cola el día anterior con DNI o pasaporte físico. Tarifas referenciales sujetas a cambio por el Ministerio de Cultura.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="adventure" id="aventura">
         <div class="container">
             <div class="section-header">
@@ -2646,7 +3000,7 @@
                     <div>
                         <div class="mx-photo" style="min-height:260px;max-height:320px;margin-bottom:1rem;"><img data-wx="05" src="assets/wachuma/05.jpg" alt="Pareja compartiendo la experiencia de Wachuma" loading="lazy" style="object-position:50% 22%"></div>
                         <div class="mx-amount"><strong>USD 350</strong><span>por persona</span><hr style="border:0;border-top:1px solid rgba(201,169,97,.4);margin:.8rem 0"><strong>USD 700</strong><span>total · 2 personas</span></div>
-                        <a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20Experiencia%20en%20Wachuma%20para%202%20personas." target="_blank" rel="noopener" class="btn" style="display:block;text-align:center;"><i class="fab fa-whatsapp"></i> Reservar por WhatsApp</a>
+                        <a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Tours%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20Experiencia%20en%20Wachuma%20para%202%20personas." target="_blank" rel="noopener" class="btn" style="display:block;text-align:center;"><i class="fab fa-whatsapp"></i> Reservar por WhatsApp</a>
                         <p class="mx-small">El precio corresponde a la modalidad básica. Si desean un escenario especial o premium, podemos presentar una alternativa según el lugar y los servicios seleccionados. Antes de reservar, consúltanos sobre tu estado de salud y medicación.</p>
                     </div>
                 </div>
@@ -2678,7 +3032,7 @@
 </div></div>
                 </div>
                 <p class="mx-note">El precio incluye lo detallado en cada modalidad. Para la experiencia privada para 2 personas de 6 – 7 horas, ver la propuesta anterior.</p>
-                <div style="text-align:center"><a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Retiro%20de%20Wachuma%20(Full%20Day%20%2F%202%20d%C3%ADas%201%20noche)." target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Consultar el retiro por WhatsApp</a></div>
+                <div style="text-align:center"><a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Tours%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Retiro%20de%20Wachuma%20(Full%20Day%20%2F%202%20d%C3%ADas%201%20noche)." target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Consultar el retiro por WhatsApp</a></div>
             </div>
 
         <!-- ============ EXPERIENCIA AYAHUASCA ============ -->
@@ -2735,7 +3089,7 @@
             </div>
             <p class="mx-small" style="text-align:center;max-width:720px;margin:0 auto 2rem">Esta experiencia es de carácter espiritual y cultural; no sustituye diagnóstico ni tratamiento médico. Antes de reservar, consúltanos sobre tu estado de salud y medicación.</p>
 
-            <div style="text-align:center"><a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20Experiencia%20de%20Purificaci%C3%B3n%20con%20Ayahuasca." target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Reservar Ayahuasca por WhatsApp</a></div>
+            <div style="text-align:center"><a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Tours%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20Experiencia%20de%20Purificaci%C3%B3n%20con%20Ayahuasca." target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Reservar Ayahuasca por WhatsApp</a></div>
         </div>
 
         <!-- ============ BAÑO DE FLORECIMIENTO ============ -->
@@ -2768,7 +3122,7 @@
                 <div class="mx-text">
                     <h4>Reserva tu baño de florecimiento</h4>
                     <p>Cuéntanos qué buscas (limpieza, amor, prosperidad) y preparamos el baño para ti. Consulta la tarifa y la disponibilidad por WhatsApp.</p>
-                    <a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Ba%C3%B1o%20de%20Florecimiento%20%E2%80%93%20Las%20Yerberas%20%28limpieza%29." target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Consultar por WhatsApp</a>
+                    <a href="https://wa.me/51930299443?text=Hola%20Luna%20Llena%20Tours%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Ba%C3%B1o%20de%20Florecimiento%20%E2%80%93%20Las%20Yerberas%20%28limpieza%29." target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Consultar por WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -2931,7 +3285,7 @@
                         </div>
                         <div>
                             <strong>TripAdvisor</strong>
-                            <p><a href="https://www.tripadvisor.com.pe/Attraction_Review-g294314-d28259074-Reviews-Luna_Llena_Travel-Cusco_Cusco_Region.html" target="_blank" rel="noopener" style="color: inherit;">Luna Llena Travel - Opiniones</a></p>
+                            <p><a href="https://www.tripadvisor.com.pe/Attraction_Review-g294314-d28259074-Reviews-Luna_Llena_Travel-Cusco_Cusco_Region.html" target="_blank" rel="noopener" style="color: inherit;">Luna Llena Tours - Opiniones</a></p>
                         </div>
                     </div>
 
@@ -2973,6 +3327,15 @@
                                     <option>Ayahuasca – 2 días / 1 noche Grupal (S/ 950)</option>
                                     <option>Ayahuasca – 2 días / 1 noche Privado (S/ 1,100)</option>
                                     <option>Baño de Florecimiento – Las Yerberas</option>
+                                </optgroup>
+                                <optgroup label="Cusco Tradicional (nuevos)">
+                                    <option>City Tour con Realidad Virtual</option>
+                                    <option>5 Ruinas con Caminata (Privado)</option>
+                                    <option>Maras Vivencial</option>
+                                    <option>Montaña Pallay Punchu</option>
+                                    <option>Cuatrimotos Valle Rojo + Montaña de Colores</option>
+                                    <option>Cuatrimotos Maras y Moray</option>
+                                    <option>Cuatrimotos Morada de los Dioses + Piuray</option>
                                 </optgroup>
                                 <optgroup label="Machu Picchu">
                                     <option>MAPI Full Day Tren Expeditions</option>
@@ -3071,9 +3434,9 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <img src="assets/logo.png" class="footer-logo" alt="Logo Luna Llena Travel">
-                <h4>Luna Llena Travel</h4>
-                <p>Full Moon Travel Agency E.I.R.L.</p>
+                <img src="assets/logo.png" class="footer-logo" alt="Logo Luna Llena Tours">
+                <h4>Luna Llena Tours</h4>
+                <p>Operadores directos en Cusco</p>
                 <p>RUC: 20603319428</p>
                 <p>Código Municipal: 006784-2018</p>
                 <p style="margin-top: 1rem;">Operadores directos en Cusco desde 2018.</p>
@@ -3108,7 +3471,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Luna Llena Travel | Full Moon Travel Agency E.I.R.L. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Luna Llena Tours. Todos los derechos reservados.</p>
             <p style="margin-top: 0.5rem;">Comprometidos con el medio ambiente | Turismo Sostenible</p>
         </div>
     </footer>
@@ -3203,6 +3566,15 @@
             });
         });
 
+
+        // Imagen del boleto turístico (assets/boleto.turistico.*)
+        (function(){
+            var img=document.getElementById('boletoImg'); if(!img) return;
+            var exts=['jpg','jpeg','webp','png','JPG','JPEG','WEBP','PNG'], i=0;
+            img.addEventListener('error',function(){ if(i<exts.length){ img.src='assets/boleto.turistico.'+exts[i++]; } else { img.style.display='none'; } });
+            img.src='assets/boleto.turistico.'+exts[i++];
+        })();
+
         // Tabs de catálogos
         const tabBtns = document.querySelectorAll('.tab-btn');
         const tabContents = document.querySelectorAll('.tab-content');
@@ -3232,7 +3604,7 @@
             const mensaje = document.getElementById('mensaje').value;
 
             // Crear mensaje de WhatsApp
-            const whatsappMsg = `¡Hola Luna Llena Travel!%0A%0A*Nombre:* ${nombre}%0A*Email:* ${email}%0A*Teléfono:* ${telefono}%0A*Tour:* ${tour}%0A*Fecha:* ${fecha}%0A*Personas:* ${personas}%0A*Mensaje:* ${mensaje}`;
+            const whatsappMsg = `¡Hola Luna Llena Tours!%0A%0A*Nombre:* ${nombre}%0A*Email:* ${email}%0A*Teléfono:* ${telefono}%0A*Tour:* ${tour}%0A*Fecha:* ${fecha}%0A*Personas:* ${personas}%0A*Mensaje:* ${mensaje}`;
             
             // Abrir WhatsApp
             window.open(`https://wa.me/51930299443?text=${whatsappMsg}`, '_blank');
