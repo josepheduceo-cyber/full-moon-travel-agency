@@ -847,9 +847,14 @@
         }
 
         .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 2rem;
+        }
+        .team-grid .team-card {
+            flex: 0 1 calc((100% - 4rem) / 3);
+            min-width: 260px;
         }
 
         .team-card {
@@ -861,13 +866,47 @@
         }
 
         .team-image {
-            height: 300px;
+            height: 340px;
             background: var(--gradient);
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             font-size: 5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-photo {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .team-card:hover .team-photo { transform: scale(1.05); }
+
+        .team-card-main {
+            box-shadow: 0 14px 40px rgba(0,0,0,0.18);
+            outline: 3px solid var(--accent);
+            outline-offset: -3px;
+        }
+
+        .team-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            z-index: 2;
+            background: var(--accent);
+            color: #1a1a1a;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 0.4rem 0.8rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
 
         .team-info {
@@ -1254,7 +1293,8 @@
 
             .tour-image { height: 200px; }
             .region-card { min-height: 320px; padding: 1.5rem; }
-            .team-image { height: 240px; }
+            .team-image { height: 300px; }
+            .team-grid .team-card { flex: 0 1 100%; }
             .adventure-card { padding: 11rem 1.5rem 1.5rem; }
 
             .payment-policy { padding: 1.25rem; }
@@ -3138,38 +3178,62 @@
                 <div class="section-divider"></div>
             </div>
             <div class="team-grid">
-                <div class="team-card">
+                <div class="team-card team-card-main">
                     <div class="team-image">
-                        <i class="fas fa-user-tie"></i>
+                        <span class="team-badge"><i class="fas fa-star"></i> Guía 1 · Principal</span>
+                        <img class="team-photo" data-guia="1" src="assets/guias/guia.1.jpg" alt="Álvaro Oblitas Mora - Guía Oficial de Turismo" style="object-position: 50% 72%;" loading="lazy">
                     </div>
                     <div class="team-info">
-                        <h3 class="team-name">Christian Perez Ferro</h3>
-                        <p class="team-role">Guía Turístico Profesional</p>
+                        <h3 class="team-name">Álvaro Oblitas Mora</h3>
+                        <p class="team-role">Guía Oficial de Turismo</p>
                         <p class="team-languages"><i class="fas fa-language"></i> Español - Inglés</p>
                     </div>
                 </div>
 
                 <div class="team-card">
                     <div class="team-image">
-                        <i class="fas fa-user-tie"></i>
+                        <img class="team-photo" data-guia="2" src="assets/guias/guia.2.jpg" alt="Manuel Arbulu - Guía Oficial de Turismo" style="object-position: 50% 55%;" loading="lazy">
                     </div>
                     <div class="team-info">
-                        <h3 class="team-name">Alvaro Oblitas Mora</h3>
-                        <p class="team-role">Guía Turístico Profesional</p>
+                        <h3 class="team-name">Manuel Arbulu</h3>
+                        <p class="team-role">Guía Oficial de Turismo</p>
                         <p class="team-languages"><i class="fas fa-language"></i> Español - Inglés</p>
                     </div>
                 </div>
 
                 <div class="team-card">
                     <div class="team-image">
-                        <i class="fas fa-user-tie"></i>
+                        <img class="team-photo" data-guia="3" src="assets/guias/guia.3.jpg" alt="Christian Pérez Ferro - Guía Oficial de Turismo" style="object-position: 35% 40%;" loading="lazy">
                     </div>
                     <div class="team-info">
-                        <h3 class="team-name">Alexander Huaman Soto</h3>
-                        <p class="team-role">Guía Turístico Profesional</p>
+                        <h3 class="team-name">Christian Pérez Ferro</h3>
+                        <p class="team-role">Guía Oficial de Turismo</p>
                         <p class="team-languages"><i class="fas fa-language"></i> Español - Inglés</p>
                     </div>
                 </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img class="team-photo" data-guia="4" src="assets/guias/guia.4.jpg" alt="Alexander Huamán Soto - Guía Oficial de Turismo" style="object-position: 65% 65%;" loading="lazy">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Alexander Huamán Soto</h3>
+                        <p class="team-role">Guía Oficial de Turismo</p>
+                        <p class="team-languages"><i class="fas fa-language"></i> Español - Inglés</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img class="team-photo" data-guia="5" src="assets/guias/guia.5.jpg" alt="Leidy Canal Carreño - Guía Oficial de Turismo" style="object-position: 50% 30%;" loading="lazy">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Leidy Canal Carreño</h3>
+                        <p class="team-role">Guía Oficial de Turismo</p>
+                        <p class="team-languages"><i class="fas fa-language"></i> Español - Inglés</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -3573,6 +3637,18 @@
             var exts=['jpg','jpeg','webp','png','JPG','JPEG','WEBP','PNG'], i=0;
             img.addEventListener('error',function(){ if(i<exts.length){ img.src='assets/boleto.turistico.'+exts[i++]; } else { img.style.display='none'; } });
             img.src='assets/boleto.turistico.'+exts[i++];
+        })();
+
+        // Fotos de guías (assets/guias/guia.1 ... guia.5, cualquier extensión)
+        (function(){
+            var exts=['jpg','jpeg','png','webp','JPG','JPEG','PNG','WEBP'];
+            document.querySelectorAll('.team-photo').forEach(function(img){
+                var n=img.getAttribute('data-guia'), i=1;
+                img.addEventListener('error',function(){
+                    if(i<exts.length){ img.src='assets/guias/guia.'+n+'.'+exts[i++]; }
+                    else { img.style.display='none'; }
+                });
+            });
         })();
 
         // Tabs de catálogos
