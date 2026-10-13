@@ -613,6 +613,13 @@
             color: var(--secondary);
         }
 
+        .tour-price-multi {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            flex: 1;
+            padding-right: 0.75rem;
+        }
+
         .tour-btn {
             padding: 0.6rem 1.5rem;
             background: var(--secondary);
@@ -634,6 +641,7 @@
            BOLETOS Y ENTRADAS
         ============================================ */
         .tour-price-note { font-size: 0.78rem; color: #777; margin: 0 0 0.9rem; line-height: 1.4; }
+        .tour-price-note-green { color: var(--secondary); font-weight: 600; }
         .tickets { background: var(--light); }
         .tickets-top { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 2rem; align-items: center; margin-bottom: 3rem; }
         .tickets-top img { width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.15); }
@@ -1574,9 +1582,8 @@
                                     <li>Box lunch</li>
                                 </ul>
                             </div>
-                            <p class="tour-price-note">Extranjeros US$ 335 · Nacionales US$ 295</p>
                             <div class="tour-footer">
-                                <span class="tour-price">US$ 335</span>
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 335 · Nacionales S/.999 &nbsp;US$ 295</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1607,7 +1614,7 @@
                                 </ul>
                             </div>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price tour-price-multi">Nacionales S/.390 (US$ 115)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1638,7 +1645,7 @@
                                 </ul>
                             </div>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 475<br>Nacionales S/.1460 (US$ 430)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1733,9 +1740,9 @@
                                     <li>Guía profesional</li>
                                 </ul>
                             </div>
-                            <p class="tour-price-note">Extranjeros: Básico US$ 195 · Premium US$ 220 · VIP US$ 285<br>Nacionales: Básico US$ 145 · Premium US$ 180 · VIP US$ 210</p>
+                            <p class="tour-price-note tour-price-note-green">Extranjeros: VIP US$ 285<br>Nacionales: VIP US$ 210</p>
                             <div class="tour-footer">
-                                <span class="tour-price">Desde US$ 195</span>
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 235<br>Nacionales S/.665 (US$ 195)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1766,9 +1773,8 @@
                                     <li>Guía profesional</li>
                                 </ul>
                             </div>
-                            <p class="tour-price-note">Extranjeros US$ 395 · Nacionales US$ 350</p>
                             <div class="tour-footer">
-                                <span class="tour-price">US$ 395</span>
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 395<br>Nacionales S/.1210 (US$ 355)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1797,7 +1803,7 @@
                                 </ul>
                             </div>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 630<br>Nacionales S/.2005 (US$ 590)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1826,7 +1832,7 @@
                                 </ul>
                             </div>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 830<br>Nacionales S/.2690 (US$ 790)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1887,7 +1893,7 @@
                                 </ul>
                             </div>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 450<br>Nacionales S/.1270 (US$ 410)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1917,7 +1923,7 @@
                                 </ul>
                             </div>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 450<br>Nacionales S/.1325 (US$ 390)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -1946,7 +1952,7 @@
                                 </ul>
                             </div>
                             <div class="tour-footer">
-                                <span class="tour-price">Consultar</span>
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 650<br>Nacionales S/.2110 (US$ 620)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
