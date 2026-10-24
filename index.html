@@ -972,11 +972,29 @@
 
         .payment-method {
             background: white;
-            padding: 1rem 2rem;
+            padding: 0.8rem 1.4rem;
             border-radius: 10px;
             font-weight: 700;
             color: var(--primary);
             font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 120px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+            transition: transform 0.25s ease;
+        }
+
+        .payment-method:hover {
+            transform: translateY(-3px);
+        }
+
+        .payment-method img {
+            height: 56px;
+            width: auto;
+            max-width: 150px;
+            object-fit: contain;
+            display: block;
         }
 
         /* ============================================
@@ -1137,6 +1155,33 @@
         .social-links a:hover {
             background: var(--accent);
             color: var(--primary);
+        }
+
+        .footer-responsable {
+            display: flex;
+            justify-content: center;
+            max-width: 1400px;
+            margin: 0 auto 2rem;
+        }
+
+        .footer-responsable-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 0.9rem 1.6rem;
+            border: 2px solid var(--gold);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            line-height: 0;
+        }
+
+        .footer-responsable-card img {
+            height: 130px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        @media (max-width: 560px) {
+            .footer-responsable-card img { height: 100px; }
         }
 
         .footer-bottom {
@@ -1307,7 +1352,8 @@
 
             .payment-policy { padding: 1.25rem; }
             .payment-methods { gap: 1rem; }
-            .payment-method { padding: 0.8rem 1.2rem; font-size: 1rem; }
+            .payment-method { padding: 0.6rem 0.9rem; font-size: 1rem; min-width: 96px; }
+            .payment-method img { height: 44px; max-width: 120px; }
             .contact-form { padding: 1.25rem; }
 
             footer { padding: 2.5rem 1rem 1rem; }
@@ -1484,8 +1530,8 @@
         </div>
 
         <div class="hero-content">
-            <p class="hero-subtitle">Operadores Directos en Cusco</p>
-            <h1 class="hero-title">MACHU PICCHU<br>TEMPORADA 2026</h1>
+            <p class="hero-subtitle">Operadores Directos en Perú con base en Cusco</p>
+            <h1 class="hero-title">MACHU PICCHU - PERÚ<br>TEMPORADA 2027</h1>
             <div class="hero-quote">
                 "En la variedad de sus encantos y el poder de su hechizo, no conozco ningún lugar en el mundo que pueda compararse con él"
                 <cite>— Hiram Bingham</cite>
@@ -3229,32 +3275,31 @@
 
             <div class="payment-policy">
                 <h3><i class="fas fa-info-circle"></i> Política de Reservas</h3>
-                <p>La reserva del tour se realiza con el pago del <strong>50% del costo total</strong> para la realización de las reservas primordiales como son los ingresos a Machu Picchu, tickets de tren, buses Consettur, logística según la ruta. Y el otro <strong>50% pendiente</strong> al llegar a Cusco antes de la realización del tour.</p>
-                <p style="margin-top: 1rem;"><em>*Leer términos y condiciones de pago.</em></p>
+                <p>La reserva de nuestros paquetes se realiza con el pago del <strong>50% del costo total</strong> para la realización de las reservas primordiales sujetas a disponibilidad como son tickets de ingreso a Machu Picchu, tickets de tren turístico, vuelos, hoteles y otros según logística. Y el <strong>50% pendiente</strong> días antes de la realización de los tours.</p>
             </div>
 
             <div class="payment-policy">
                 <h3><i class="fas fa-exclamation-triangle"></i> Importante</h3>
                 <ul style="list-style: none; margin-top: 1rem;">
-                    <li style="padding: 0.5rem 0;"><i class="fas fa-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Toda reserva debe ser solicitada vía e-mail o telefónica</li>
+                    <li style="padding: 0.5rem 0;"><i class="fas fa-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Toda reserva debe ser solicitada vía WhatsApp, e-mail o telefónica</li>
                     <li style="padding: 0.5rem 0;"><i class="fas fa-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Cancelaciones a última hora: cobro NO SHOW del 100%</li>
                     <li style="padding: 0.5rem 0;"><i class="fas fa-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Tarifas expresadas en nuevos soles (no incluyen IGV)</li>
-                    <li style="padding: 0.5rem 0;"><i class="fas fa-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Ingreso a Moray: S/40 nacional / S/70 extranjero</li>
-                    <li style="padding: 0.5rem 0;"><i class="fas fa-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Ingreso a Minas de Sal: S/10</li>
+                    <li style="padding: 0.5rem 0;"><i class="fas fa-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Consultar disponibilidad de hoteles, Airbnb, vuelos</li>
+                    <li style="padding: 0.5rem 0;"><i class="fas fa-check" style="color: var(--accent); margin-right: 0.5rem;"></i> Consultar disponibilidad de tickets de ingreso a Machu Picchu</li>
                 </ul>
             </div>
 
             <h3 style="text-align: center; margin-bottom: 2rem;">Aceptamos toda forma de pago</h3>
             <div class="payment-methods">
-                <div class="payment-method"><i class="fab fa-cc-visa"></i> VISA</div>
-                <div class="payment-method"><i class="fab fa-cc-mastercard"></i> MasterCard</div>
-                <div class="payment-method"><i class="fab fa-cc-diners-club"></i> Diners Club</div>
-                <div class="payment-method"><i class="fab fa-cc-amex"></i> American Express</div>
-                <div class="payment-method">Western Union</div>
-                <div class="payment-method"><i class="fab fa-paypal"></i> PayPal</div>
-                <div class="payment-method">Remitly</div>
-                <div class="payment-method">Plin</div>
-                <div class="payment-method">Yape</div>
+                <div class="payment-method" data-name="VISA"><img data-pay="1" alt="VISA" title="VISA" loading="lazy" decoding="async"></div>
+                <div class="payment-method" data-name="MasterCard"><img data-pay="2" alt="MasterCard" title="MasterCard" loading="lazy" decoding="async"></div>
+                <div class="payment-method" data-name="Diners Club"><img data-pay="3" alt="Diners Club" title="Diners Club" loading="lazy" decoding="async"></div>
+                <div class="payment-method" data-name="American Express"><img data-pay="4" alt="American Express" title="American Express" loading="lazy" decoding="async"></div>
+                <div class="payment-method" data-name="Western Union"><img data-pay="5" alt="Western Union" title="Western Union" loading="lazy" decoding="async"></div>
+                <div class="payment-method" data-name="PayPal"><img data-pay="6" alt="PayPal" title="PayPal" loading="lazy" decoding="async"></div>
+                <div class="payment-method" data-name="Remitly"><img data-pay="7" alt="Remitly" title="Remitly" loading="lazy" decoding="async"></div>
+                <div class="payment-method" data-name="Plin"><img data-pay="8" alt="Plin" title="Plin" loading="lazy" decoding="async"></div>
+                <div class="payment-method" data-name="Yape"><img data-pay="9" alt="Yape" title="Yape" loading="lazy" decoding="async"></div>
             </div>
         </div>
     </section>
@@ -3279,7 +3324,7 @@
                         </div>
                         <div>
                             <strong>Dirección</strong>
-                            <p>Urb. Cachimayo A-18 San Sebastián, Cusco - Perú</p>
+                            <p>Calle Chihuampata 543 San Blas</p>
                         </div>
                     </div>
 
@@ -3289,7 +3334,7 @@
                         </div>
                         <div>
                             <strong>WhatsApp</strong>
-                            <p>930 299 443 | 914 759 053</p>
+                            <p>930 299 443 | 982 360 927</p>
                         </div>
                     </div>
 
@@ -3300,6 +3345,7 @@
                         <div>
                             <strong>Email</strong>
                             <p>fullmoontravelagency@gmail.com</p>
+                            <p>lunallenatours@gmail.com</p>
                         </div>
                     </div>
 
@@ -3309,7 +3355,7 @@
                         </div>
                         <div>
                             <strong>Web</strong>
-                            <p>www.lunallenatravel.com</p>
+                            <p><a href="https://www.lunallenatravel.com" target="_blank" rel="noopener" style="color: inherit;">www.lunallenatravel.com</a></p>
                         </div>
                     </div>
 
@@ -3480,18 +3526,22 @@
             <div class="footer-col">
                 <img src="assets/logo.png" class="footer-logo" alt="Logo Luna Llena Tours">
                 <h4>Luna Llena Tours</h4>
-                <p>Operadores directos en Cusco</p>
+                <p>Operadores directos en Cusco desde 2018</p>
+                <p>Razón Social: Full Moon Travel Agency E.I.R.L</p>
+                <p>Oficina Cusco: Calle Chihuampata 543 San Blas</p>
+                <p>Oficina Lima: Av. San Borja Sur 659-B</p>
                 <p>RUC: 20603319428</p>
                 <p>Código Municipal: 006784-2018</p>
-                <p style="margin-top: 1rem;">Operadores directos en Cusco desde 2018.</p>
             </div>
 
             <div class="footer-col">
                 <h4>Contacto</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Urb. Cachimayo A-18 San Sebastián, Cusco</p>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Chihuampata 543 San Blas</p>
                 <p><i class="fas fa-phone"></i> 930 299 443</p>
-                <p><i class="fas fa-phone"></i> 914 759 053</p>
+                <p><i class="fas fa-phone"></i> 982 360 927</p>
                 <p><i class="fas fa-envelope"></i> fullmoontravelagency@gmail.com</p>
+                <p><i class="fas fa-envelope"></i> lunallenatours@gmail.com</p>
+                <p><i class="fas fa-globe"></i> <a href="https://www.lunallenatravel.com" target="_blank" rel="noopener" style="display: inline;">www.lunallenatravel.com</a></p>
             </div>
 
             <div class="footer-col">
@@ -3514,8 +3564,14 @@
             </div>
         </div>
 
+        <div class="footer-responsable" id="turismoResponsable">
+            <div class="footer-responsable-card">
+                <img id="turismoResponsableImg" alt="Protégeme - Turismo Responsable: prevenir la explotación sexual de niñas, niños y adolescentes" loading="lazy" decoding="async">
+            </div>
+        </div>
+
         <div class="footer-bottom">
-            <p>&copy; 2026 Luna Llena Tours. Todos los derechos reservados.</p>
+            <p>&copy; 2027 Luna Llena Tours. Todos los derechos reservados.</p>
             <p style="margin-top: 0.5rem;">Comprometidos con el medio ambiente | Turismo Sostenible</p>
         </div>
     </footer>
@@ -3617,6 +3673,27 @@
             var exts=['jpg','jpeg','webp','png','JPG','JPEG','WEBP','PNG'], i=0;
             img.addEventListener('error',function(){ if(i<exts.length){ img.src='assets/boleto.turistico.'+exts[i++]; } else { img.style.display='none'; } });
             img.src='assets/boleto.turistico.'+exts[i++];
+        })();
+
+        // Logo Turismo Responsable (assets/turismo.responsable.*)
+        (function(){
+            var img=document.getElementById('turismoResponsableImg'); if(!img) return;
+            var exts=['png','jpg','jpeg','webp','PNG','JPG','JPEG','WEBP'], i=0;
+            img.addEventListener('error',function(){ if(i<exts.length){ img.src='assets/turismo.responsable.'+exts[i++]; } else { document.getElementById('turismoResponsable').style.display='none'; } });
+            img.src='assets/turismo.responsable.'+exts[i++];
+        })();
+
+        // Logos de formas de pago (assets/formas.de.pago/1 ... 9, cualquier extensión)
+        (function(){
+            var exts=['png','jpg','jpeg','webp','svg','PNG','JPG','JPEG','WEBP','SVG'];
+            document.querySelectorAll('.payment-method img[data-pay]').forEach(function(img){
+                var n=img.getAttribute('data-pay'), i=0;
+                img.addEventListener('error',function(){
+                    if(i<exts.length){ img.src='assets/formas.de.pago/'+n+'.'+exts[i++]; }
+                    else { img.parentNode.textContent=img.parentNode.getAttribute('data-name'); }
+                });
+                img.src='assets/formas.de.pago/'+n+'.'+exts[i++];
+            });
         })();
 
         // Fotos de guías (assets/guias/guia.1 ... guia.5, cualquier extensión)
