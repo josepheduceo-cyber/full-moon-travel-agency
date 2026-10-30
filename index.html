@@ -172,6 +172,35 @@
             overflow: hidden;
         }
 
+        /* Imagen de fondo detrás de la portada (assets/detras.de.la.portada) */
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background-color: #0c0c0c;
+            background-position: center 40%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: opacity 1.2s ease;
+            pointer-events: none;
+        }
+        .hero-bg.is-ready { opacity: 1; }
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 50% 45%, rgba(12,12,12,0) 0%, rgba(12,12,12,0.55) 100%),
+                linear-gradient(to bottom, rgba(12,12,12,0.55) 0%, rgba(12,12,12,0.25) 30%, rgba(12,12,12,0.45) 70%, rgba(12,12,12,0.9) 100%);
+        }
+        @media (max-width: 768px) {
+            .hero-bg { background-position: 60% 30%; }
+        }
+        @media (max-width: 480px) {
+            .hero-bg { background-position: 65% 25%; }
+        }
+
         /* Portada completa, enmarcada (liviana: solo transform/opacity) */
         .hero-frame {
             position: relative;
@@ -1556,6 +1585,7 @@
 
     <!-- HERO -->
     <section class="hero" id="inicio">
+        <div class="hero-bg" id="heroBg" aria-hidden="true"></div>
         <div class="hero-frame" id="heroFrame">
             <div class="hero-frame-inner">
                 <img class="hero-img" id="heroImg" alt="Luna Llena Tours - Valle Sagrado, Moray, Machu Picchu, Montaña de Colores y Humantay" decoding="async" fetchpriority="high">
@@ -3721,6 +3751,24 @@
                     img.onload = ready;
                 }
             });
+
+            // Imagen de fondo detrás de la portada (prueba varias extensiones)
+            (function () {
+                const bg = document.getElementById('heroBg');
+                const exts = ['webp', 'jpg', 'jpeg', 'png', 'JPG', 'JPEG', 'PNG', 'WEBP'];
+                let i = 0;
+                (function next() {
+                    if (i >= exts.length) return;
+                    const url = 'assets/detras.de.la.portada.' + exts[i++];
+                    const im = new Image();
+                    im.onload = () => {
+                        bg.style.backgroundImage = 'url("' + url + '")';
+                        bg.classList.add('is-ready');
+                    };
+                    im.onerror = next;
+                    im.src = url;
+                })();
+            })();
 
             // Pausa las animaciones del hero cuando no está a la vista
             const hero = document.querySelector('.hero');
