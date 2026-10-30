@@ -937,6 +937,40 @@
             font-size: 0.9rem;
         }
 
+        /* Guías espirituales (Altomisayoc) */
+        .team-card-mystic {
+            background: linear-gradient(160deg, #14201a 0%, #0d0d0d 100%);
+            outline: 2px solid var(--gold);
+            outline-offset: -2px;
+            box-shadow: 0 14px 40px rgba(201,169,97,0.22);
+        }
+        .team-card-mystic .team-image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0) 45%);
+            pointer-events: none;
+        }
+        .team-badge-mystic {
+            background: rgba(13,13,13,0.82);
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            backdrop-filter: blur(4px);
+        }
+        .team-badge-mystic i { margin-right: 0.25rem; }
+        .team-card-mystic .team-name { color: #fff; }
+        .team-card-mystic .team-role { color: var(--gold); letter-spacing: 0.02em; }
+        .team-card-mystic .team-role i { margin-right: 0.35rem; }
+        .team-card-mystic .team-languages { color: rgba(255,255,255,0.7); }
+        .team-card-mystic .team-ornament {
+            display: flex; align-items: center; justify-content: center; gap: 0.6rem;
+            margin-top: 1rem; color: var(--gold); font-size: 0.8rem; opacity: 0.85;
+        }
+        .team-card-mystic .team-ornament::before,
+        .team-card-mystic .team-ornament::after {
+            content: ""; width: 36px; height: 1px; background: var(--gold); opacity: 0.6;
+        }
+
         /* ============================================
            PAGOS
         ============================================ */
@@ -1669,81 +1703,6 @@
                     <!-- Tour 3 -->
                     <div class="tour-card">
                         <div class="tour-image">
-                            <img src="assets/machupicchu/mapi.full.day.tren.vistadome.hiram.bingham.jpg" alt="Vistadome" loading="lazy" decoding="async">
-                            <span class="tour-badge">Full Day</span>
-                        </div>
-                        <div class="tour-content">
-                            <span class="tour-category">Ruta en Tren Premium</span>
-                            <h3 class="tour-title">MAPI Full Day Tren Vistadome - Hiram Bingham</h3>
-                            <div class="tour-duration">
-                                <i class="far fa-clock"></i> 1 día | <i class="fas fa-signal"></i> Fácil
-                            </div>
-                            <p class="tour-description">Tren turístico Vistadome o Hiram Bingham con ventanas panorámicas y coche bar observatorio.</p>
-                            <div class="tour-includes">
-                                <h4>Incluye:</h4>
-                                <ul>
-                                    <li>Transporte Cusco-Ollantaytambo</li>
-                                    <li>Tren Vistadome o Hiram Bingham</li>
-                                    <li>Bus Consettur</li>
-                                    <li>Ticket de ingreso</li>
-                                    <li>Guía profesional</li>
-                                    <li>Botiquín - aid kits</li>
-                                </ul>
-                            </div>
-                            <div class="tour-footer">
-                                <span class="tour-price tour-price-multi">Extranjeros US$ 475<br>Nacionales S/.1460 (US$ 430)</span>
-                                <a href="#contacto" class="tour-btn">Reservar</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tour 4 -->
-                    <div class="tour-card">
-                        <div class="tour-image">
-                            <img src="assets/machupicchu/mapi.2D1N.tren.vistadome.vip.service.jpg" alt="Vistadome VIP" loading="lazy" decoding="async">
-                            <span class="tour-badge">2D/1N</span>
-                        </div>
-                        <div class="tour-content">
-                            <span class="tour-category">Ruta en Tren VIP</span>
-                            <h3 class="tour-title">AUSANGATE + MONTAÑA DE COLORES 04 DIAS/03 NOCHES</h3>
-                            <div class="tour-duration">
-                                <i class="far fa-clock"></i> 4 días / 3 noches | <i class="fas fa-signal"></i> Moderado
-                            </div>
-                            <div class="tour-includes">
-                                <p style="margin:0;">Por definir</p>
-                            </div>
-                            <div class="tour-footer">
-                                <span class="tour-price tour-price-multi">Extranjeros US$ 630<br>Nacionales S/.2005 (US$ 590)</span>
-                                <a href="#contacto" class="tour-btn">Reservar</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tour 5 -->
-                    <div class="tour-card">
-                        <div class="tour-image">
-                            <img src="assets/machupicchu/mapi.2D1N.tren.hiram.bingham.first.class.jpg" alt="Hiram Bingham" loading="lazy" decoding="async">
-                            <span class="tour-badge">2D/1N VIP</span>
-                        </div>
-                        <div class="tour-content">
-                            <span class="tour-category">Ruta en Tren Lujo</span>
-                            <h3 class="tour-title">HUCHUY QOSQO TREK 02 DIAS/01 NOCHE</h3>
-                            <div class="tour-duration">
-                                <i class="far fa-clock"></i> 2 días / 1 noche | <i class="fas fa-signal"></i> Fácil
-                            </div>
-                            <div class="tour-includes">
-                                <p style="margin:0;">Por definir</p>
-                            </div>
-                            <div class="tour-footer">
-                                <span class="tour-price tour-price-multi">Extranjeros US$ 310<br>Nacionales S/.985 (US$ 290)</span>
-                                <a href="#contacto" class="tour-btn">Reservar</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tour 6 -->
-                    <div class="tour-card">
-                        <div class="tour-image">
                             <img src="assets/machupicchu/mapi.2D1N.by.car.hidroel%C3%A9ctrica.jpg" alt="Hidroeléctrica" loading="lazy" decoding="async">
                             <span class="tour-badge">2D/1N</span>
                         </div>
@@ -1773,7 +1732,7 @@
                         </div>
                     </div>
 
-                    <!-- Tour 7 -->
+                    <!-- Tour 4 -->
                     <div class="tour-card">
                         <div class="tour-image">
                             <img src="assets/machupicchu/mapi.2D1N.conexion.valle.sagrado.machupicchu.jpg" alt="Valle Sagrado" loading="lazy" decoding="async">
@@ -1805,7 +1764,69 @@
                         </div>
                     </div>
 
-                    <!-- Tour 8 -->
+                    <!-- Tour 5 -->
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="assets/machupicchu/mapi.5D4N.choquequirao.trek.jpg" alt="Choquequirao" loading="lazy" decoding="async">
+                            <span class="tour-badge">5D/4N</span>
+                        </div>
+                        <div class="tour-content">
+                            <span class="tour-category">Trekking Extremo</span>
+                            <h3 class="tour-title">MAPI 02 DIAS/01 NOCHE PAX SIN TICKET DE INGRESO A MAPI</h3>
+                            <div class="tour-duration">
+                                <i class="far fa-clock"></i> 2 días / 1 noche | <i class="fas fa-signal"></i> Fácil
+                            </div>
+                            <p class="tour-description">Cusco - Capuliyoc - Playa - Maranpata - Choquequirao - San Ignacio - Villa de Loros. Altitud: 1550m - 3100m.</p>
+                            <div class="tour-includes">
+                                <h4>Incluye:</h4>
+                            <ul>
+                                <li>Transporte Cusco-Ollantaytambo</li>
+                                <li>Tren turístico Expeditions ida y retorno</li>
+                                <li>Bus Consettur subida y bajada</li>
+                                <li>Transfer personalizado en Aguas Calientes</li>
+                                <li>Guía profesional privado - bilingüe</li>
+                                <li>Box lunch</li>
+                            </ul>
+                            </div>
+                            <div class="tour-footer">
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 355<br>Nacionales S/.1120 (US$ 330)</span>
+                                <a href="#contacto" class="tour-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tour 6 -->
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="assets/machupicchu/mapi.full.day.tren.vistadome.hiram.bingham.jpg" alt="Vistadome" loading="lazy" decoding="async">
+                            <span class="tour-badge">Full Day</span>
+                        </div>
+                        <div class="tour-content">
+                            <span class="tour-category">Ruta en Tren Premium</span>
+                            <h3 class="tour-title">MAPI Full Day Tren Vistadome - Hiram Bingham</h3>
+                            <div class="tour-duration">
+                                <i class="far fa-clock"></i> 1 día | <i class="fas fa-signal"></i> Fácil
+                            </div>
+                            <p class="tour-description">Tren turístico Vistadome o Hiram Bingham con ventanas panorámicas y coche bar observatorio.</p>
+                            <div class="tour-includes">
+                                <h4>Incluye:</h4>
+                                <ul>
+                                    <li>Transporte Cusco-Ollantaytambo</li>
+                                    <li>Tren Vistadome o Hiram Bingham</li>
+                                    <li>Bus Consettur</li>
+                                    <li>Ticket de ingreso</li>
+                                    <li>Guía profesional</li>
+                                    <li>Botiquín - aid kits</li>
+                                </ul>
+                            </div>
+                            <div class="tour-footer">
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 475<br>Nacionales S/.1460 (US$ 430)</span>
+                                <a href="#contacto" class="tour-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tour 7 -->
                     <div class="tour-card">
                         <div class="tour-image">
                             <img src="assets/machupicchu/mapi.2D1N.short.inka.trail.jpg" alt="Short Inka Trail" loading="lazy" decoding="async">
@@ -1834,7 +1855,7 @@
                         </div>
                     </div>
 
-                    <!-- Tour 9 -->
+                    <!-- Tour 8 -->
                     <div class="tour-card">
                         <div class="tour-image">
                             <img src="assets/machupicchu/mapi.4D3N.traditional.inka.trail.jpg" alt="Inka Trail" loading="lazy" decoding="async">
@@ -1863,36 +1884,37 @@
                         </div>
                     </div>
 
-                    <!-- Tour 10 -->
+                    <!-- Tour 9 -->
                     <div class="tour-card">
                         <div class="tour-image">
-                            <img src="assets/machupicchu/mapi.3D2N.lares.trek.jpg" alt="Lares Trek" style="object-position: 50% 13%;" loading="lazy" decoding="async">
-                            <span class="tour-badge">3D/2N</span>
+                            <img src="assets/machupicchu/mapi.4D3N.inka.jungle.vip.jpg" alt="Inka Jungle" loading="lazy" decoding="async">
+                            <span class="tour-badge">4D/3N</span>
                         </div>
                         <div class="tour-content">
-                            <span class="tour-category">Trekking</span>
-                            <h3 class="tour-title">MAPI 4D/3N Lares Trek</h3>
+                            <span class="tour-category">Aventura VIP</span>
+                            <h3 class="tour-title">MAPI 4D/3N Inka Jungle VIP</h3>
                             <div class="tour-duration">
-                                <i class="far fa-clock"></i> 3 días / 2 noches | <i class="fas fa-signal"></i> Moderada/Desafío
+                                <i class="far fa-clock"></i> 4 días / 3 noches | <i class="fas fa-signal"></i> Moderada
                             </div>
-                            <p class="tour-description">Cusco - Pisac - Huaran - Cancha Cancha - Kiswarani - Ollantaytambo - Aguas Calientes - Machu Picchu.</p>
+                            <p class="tour-description">Cusco - Abra Malaga - Santa Maria (biking + rafting) - Santa Teresa (hiking) - Hidroeléctrica (zip lining) - Machu Picchu.</p>
                             <div class="tour-includes">
                                 <h4>Incluye:</h4>
                                 <ul>
                                     <li>Todas las comidas</li>
-                                    <li>Campamento + Hotel Intipunku Tambo</li>
-                                    <li>Guía profesional</li>
-                                    <li>Distancia: 26 km</li>
+                                    <li>Hotel Santa Maria y Santa Teresa</li>
+                                    <li>Campamento</li>
+                                    <li>60 km biking + rafting</li>
+                                    <li>22 km hiking + zip lining</li>
                                 </ul>
                             </div>
                             <div class="tour-footer">
-                                <span class="tour-price tour-price-multi">Extranjeros US$ 570<br>Nacionales S/.1870 (US$ 550)</span>
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 450<br>Nacionales S/.1325 (US$ 390)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tour 11 -->
+                    <!-- Tour 10 -->
                     <div class="tour-card">
                         <div class="tour-image">
                             <img src="assets/machupicchu/mapi.3D2N.valle%20sagrado.machupicchu.monta%C3%B1a.colores.jpg" alt="Montaña de Colores" loading="lazy" decoding="async">
@@ -1924,37 +1946,104 @@
                         </div>
                     </div>
 
+                    <!-- Tour 11 -->
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="assets/machupicchu/mapi.2D1N.tren.vistadome.vip.service.jpg" alt="Vistadome VIP" loading="lazy" decoding="async">
+                            <span class="tour-badge">2D/1N</span>
+                        </div>
+                        <div class="tour-content">
+                            <span class="tour-category">Ruta en Tren VIP</span>
+                            <h3 class="tour-title">AUSANGATE + MONTAÑA DE COLORES 04 DIAS/03 NOCHES</h3>
+                            <div class="tour-duration">
+                                <i class="far fa-clock"></i> 4 días / 3 noches | <i class="fas fa-signal"></i> Moderado
+                            </div>
+                            <p class="tour-description">Una de las rutas de trekking de alta montaña más impresionantes y exigentes de la región del Cusco. Modalidad turismo vivencial, 26 km.</p>
+                            <div class="tour-includes">
+                                <h4>Incluye:</h4>
+                            <ul>
+                                <li>Transporte privado ida y retorno</li>
+                                <li>Equipo de campamento completo (carpa de montaña para 02 personas, carpa cocina, comedor, ducha y baño completamente equipados)</li>
+                                <li>Colchonetas inflables por pasajero</li>
+                                <li>Arrieros, caballos de carga y de emergencia</li>
+                                <li>Alimentación completa (03 desayunos, 04 almuerzos, 03 cenas)</li>
+                                <li>Ticket de ingreso a la Montaña de Colores y los circuitos comunitarios del nevado Ausangate</li>
+                                <li>Transfer personalizado</li>
+                                <li>Guía profesional privado - bilingüe</li>
+                                <li>Personal de apoyo: arrieros, cocineros</li>
+                                <li>Box lunch</li>
+                            </ul>
+                            </div>
+                            <div class="tour-footer">
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 630<br>Nacionales S/.2005 (US$ 590)</span>
+                                <a href="#contacto" class="tour-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Tour 12 -->
                     <div class="tour-card">
                         <div class="tour-image">
-                            <img src="assets/machupicchu/mapi.4D3N.inka.jungle.vip.jpg" alt="Inka Jungle" loading="lazy" decoding="async">
-                            <span class="tour-badge">4D/3N</span>
+                            <img src="assets/machupicchu/mapi.2D1N.tren.hiram.bingham.first.class.jpg" alt="Hiram Bingham" loading="lazy" decoding="async">
+                            <span class="tour-badge">2D/1N VIP</span>
                         </div>
                         <div class="tour-content">
-                            <span class="tour-category">Aventura VIP</span>
-                            <h3 class="tour-title">MAPI 4D/3N Inka Jungle VIP</h3>
+                            <span class="tour-category">Ruta en Tren Lujo</span>
+                            <h3 class="tour-title">HUCHUY QOSQO TREK 02 DIAS/01 NOCHE</h3>
                             <div class="tour-duration">
-                                <i class="far fa-clock"></i> 4 días / 3 noches | <i class="fas fa-signal"></i> Moderada
+                                <i class="far fa-clock"></i> 2 días / 1 noche | <i class="fas fa-signal"></i> Fácil
                             </div>
-                            <p class="tour-description">Cusco - Abra Malaga - Santa Maria (biking + rafting) - Santa Teresa (hiking) - Hidroeléctrica (zip lining) - Machu Picchu.</p>
+                            <p class="tour-description">Impresionante caminata en el corazón de los Andes, exploración del complejo arqueológico y descenso hacia el Valle Sagrado. Modalidad turismo vivencial, 26 km.</p>
                             <div class="tour-includes">
                                 <h4>Incluye:</h4>
-                                <ul>
-                                    <li>Todas las comidas</li>
-                                    <li>Hotel Santa Maria y Santa Teresa</li>
-                                    <li>Campamento</li>
-                                    <li>60 km biking + rafting</li>
-                                    <li>22 km hiking + zip lining</li>
-                                </ul>
+                            <ul>
+                                <li>Transporte privado ida y retorno</li>
+                                <li>01 noche de alojamiento en albergue rural</li>
+                                <li>Alimentación completa (01 desayuno, 02 almuerzos, 01 cena)</li>
+                                <li>Ticket de ingreso al centro arqueológico de Huchuyqosqo</li>
+                                <li>Transfer personalizado</li>
+                                <li>Guía profesional privado - bilingüe</li>
+                                <li>Personal de apoyo: arrieros, cocineros</li>
+                                <li>Box lunch</li>
+                            </ul>
                             </div>
                             <div class="tour-footer">
-                                <span class="tour-price tour-price-multi">Extranjeros US$ 450<br>Nacionales S/.1325 (US$ 390)</span>
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 310<br>Nacionales S/.985 (US$ 290)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tour 13 -->
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="assets/machupicchu/mapi.3D2N.lares.trek.jpg" alt="Lares Trek" style="object-position: 50% 13%;" loading="lazy" decoding="async">
+                            <span class="tour-badge">3D/2N</span>
+                        </div>
+                        <div class="tour-content">
+                            <span class="tour-category">Trekking</span>
+                            <h3 class="tour-title">MAPI 4D/3N Lares Trek</h3>
+                            <div class="tour-duration">
+                                <i class="far fa-clock"></i> 3 días / 2 noches | <i class="fas fa-signal"></i> Moderada/Desafío
+                            </div>
+                            <p class="tour-description">Cusco - Pisac - Huaran - Cancha Cancha - Kiswarani - Ollantaytambo - Aguas Calientes - Machu Picchu.</p>
+                            <div class="tour-includes">
+                                <h4>Incluye:</h4>
+                                <ul>
+                                    <li>Todas las comidas</li>
+                                    <li>Campamento + Hotel Intipunku Tambo</li>
+                                    <li>Guía profesional</li>
+                                    <li>Distancia: 26 km</li>
+                                </ul>
+                            </div>
+                            <div class="tour-footer">
+                                <span class="tour-price tour-price-multi">Extranjeros US$ 570<br>Nacionales S/.1870 (US$ 550)</span>
+                                <a href="#contacto" class="tour-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tour 14 -->
                     <div class="tour-card">
                         <div class="tour-image">
                             <img src="assets/machupicchu/mapi.5D4N.salkantay.machupicchu.jpg" alt="Salkantay" loading="lazy" decoding="async">
@@ -1978,29 +2067,6 @@
                             </div>
                             <div class="tour-footer">
                                 <span class="tour-price tour-price-multi">Extranjeros US$ 650<br>Nacionales S/.2110 (US$ 620)</span>
-                                <a href="#contacto" class="tour-btn">Reservar</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tour 14 -->
-                    <div class="tour-card">
-                        <div class="tour-image">
-                            <img src="assets/machupicchu/mapi.5D4N.choquequirao.trek.jpg" alt="Choquequirao" loading="lazy" decoding="async">
-                            <span class="tour-badge">5D/4N</span>
-                        </div>
-                        <div class="tour-content">
-                            <span class="tour-category">Trekking Extremo</span>
-                            <h3 class="tour-title">MAPI 02 DIAS/01 NOCHE PAX SIN TICKET DE INGRESO A MAPI</h3>
-                            <div class="tour-duration">
-                                <i class="far fa-clock"></i> 2 días / 1 noche | <i class="fas fa-signal"></i> Fácil
-                            </div>
-                            <p class="tour-description">Cusco - Capuliyoc - Playa - Maranpata - Choquequirao - San Ignacio - Villa de Loros. Altitud: 1550m - 3100m.</p>
-                            <div class="tour-includes">
-                                <p style="margin:0;">Por definir</p>
-                            </div>
-                            <div class="tour-footer">
-                                <span class="tour-price tour-price-multi">Extranjeros US$ 355<br>Nacionales S/.1120 (US$ 330)</span>
                                 <a href="#contacto" class="tour-btn">Reservar</a>
                             </div>
                         </div>
@@ -3218,10 +3284,10 @@
 
                 <div class="team-card">
                     <div class="team-image">
-                        <img class="team-photo" data-guia="2" src="assets/guias/guia.2.jpg" alt="Manuel Arbulu - Guía Oficial de Turismo" style="object-position: 50% 55%;" loading="lazy">
+                        <img class="team-photo" data-guia="2" src="assets/guias/guia.2.jpg" alt="Manuel Arbulu Zevallos - Guía Oficial de Turismo" style="object-position: 50% 55%;" loading="lazy">
                     </div>
                     <div class="team-info">
-                        <h3 class="team-name">Manuel Arbulu</h3>
+                        <h3 class="team-name">Manuel Arbulu Zevallos</h3>
                         <p class="team-role">Guía Oficial de Turismo</p>
                         <p class="team-languages"><i class="fas fa-language"></i> Español - Inglés</p>
                     </div>
@@ -3260,6 +3326,31 @@
                     </div>
                 </div>
 
+                <div class="team-card team-card-mystic">
+                    <div class="team-image">
+                        <span class="team-badge team-badge-mystic"><i class="fas fa-om"></i> Guía Espiritual</span>
+                        <img class="team-photo" data-guia="6" src="assets/guias/guia.6.jpg" alt="Christian Calero Díaz - Guía espiritual Altomisayoc" style="object-position: 50% 35%;" loading="lazy">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Christian Calero Díaz</h3>
+                        <p class="team-role"><i class="fas fa-mountain-sun"></i> Guía espiritual - Altomisayoc</p>
+                        <p class="team-languages"><i class="fas fa-language"></i> Español - Inglés</p>
+                        <div class="team-ornament"><i class="fas fa-moon"></i></div>
+                    </div>
+                </div>
+
+                <div class="team-card team-card-mystic">
+                    <div class="team-image">
+                        <span class="team-badge team-badge-mystic"><i class="fas fa-om"></i> Guía Espiritual</span>
+                        <img class="team-photo" data-guia="7" src="assets/guias/guia.7.jpg" alt="Fernando - Guía espiritual Altomisayoc" style="object-position: 50% 25%;" loading="lazy">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Fernando</h3>
+                        <p class="team-role"><i class="fas fa-mountain-sun"></i> Guía espiritual - Altomisayoc</p>
+                        <p class="team-languages"><i class="fas fa-language"></i> Español - Inglés</p>
+                        <div class="team-ornament"><i class="fas fa-moon"></i></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -3696,7 +3787,7 @@
             });
         })();
 
-        // Fotos de guías (assets/guias/guia.1 ... guia.5, cualquier extensión)
+        // Fotos de guías (assets/guias/guia.1 ... guia.7, cualquier extensión)
         (function(){
             var exts=['jpg','jpeg','png','webp','JPG','JPEG','PNG','WEBP'];
             document.querySelectorAll('.team-photo').forEach(function(img){
