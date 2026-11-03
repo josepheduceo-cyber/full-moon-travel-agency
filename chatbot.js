@@ -105,6 +105,42 @@
   ];
 
   /* Preparar catálogo unificado */
+
+  /* ---------- Traducción al inglés (usa el diccionario de i18n.js + datos propios) ---------- */
+  var EXTRA_EN = {
+    'Cuatrimotos (ATV)': { n: 'ATVs (Quad Bikes)', cat: 'Adventure', dur: 'Half day', d: '7 routes: Moray + Maras Salt Mines, Huaypo Lagoon + Maras, Moray + Huaypo Lagoon, Huaypo Lagoon + Piuray, Checoq – Tiobamba + Huaypo, Morada de los Dioses and Rainbow Mountain. 3 shifts: 6:50, 10:00 and 13:00 hrs.', p: 'Inquire' },
+    'Bicicletas Down Hill': { n: 'Downhill Bikes', cat: 'Adventure', dur: 'Half day', d: '4 routes: Moray + Maras Village + Salt Mines, Huaypo Lagoon + Maras + Salt Mines, Huaypo Lagoon + Moray + Maras, and Tambomachay + Puca Pucara + Qenqo + Sacsayhuaman. Front-suspension bike included.', p: 'Inquire' },
+    'Water Bike – Laguna Huaypo': { n: 'Water Bike – Huaypo Lagoon', cat: 'Adventure', dur: '8:30 – 13:30 hrs', d: 'Water bike at 3,500 masl with complete instruction, an exclusive guide and bird watching.', inc: ['Life jacket', 'Snack and cold drink', 'Entrance included'], p: 'Inquire' },
+    'Zip Line – Raqchi': { n: 'Zip Line – Raqchi', cat: 'Adventure', dur: '4 hours', d: '4 zip lines (200, 300, 680 and 700 meters) over the Pacchayoc canyon with views of the Sacred Valley. Specialized instructors.', p: 'Inquire' },
+    'Stand Up Paddle Board': { n: 'Stand Up Paddle Board', cat: 'Adventure', dur: '8:30 – 13:30 hrs', d: 'SUP on Huaypo Lagoon, the highest SUP fleet in the world.', inc: ['Wetsuit and life jacket', 'Windbreaker and paddle', 'Personal paddle', 'Snack and cold drink', 'Entrance included'], p: 'Inquire' },
+    'Paseo en Caballos': { n: 'Horseback Riding', cat: 'Adventure', dur: '1:45 hrs of riding', d: 'Peruvian Paso horse. Routes: Sacsayhuaman (4 ruins), Maras – Moray and Huaypo Lagoon.', inc: ['Professional horse handler', 'Helmets included'], p: 'Inquire' },
+    'Servicios Combinados': { n: 'Combined Services', cat: 'Adventure', dur: 'Varies', d: '4 packages: ATVs + Water Bike, ATVs + Maras + Water Bike, ATVs + Zip Line, and Water Bike + Zip Line. Best value for the experience.', p: 'Inquire' },
+    'Excursiones Privadas VIP': { n: 'Private VIP Excursions', cat: 'Adventure', dur: 'Private', d: '4 exclusive experiences: Cachiccata Quarries + Inti Punku, Rainbow Mountain VIP, Humantay Lake VIP and Waqrapucara VIP. Personalized service.', p: 'Inquire' },
+    'Wachuma – Experiencia privada para 2': { n: 'Wachuma – Private experience for 2', cat: 'Mystic tourism', dur: '6 – 7 hours', d: 'Private ceremony with a pilgrimage through nature, meditation and accompaniment.', inc: ['Energetic cleansing and protection', 'Inca Energy Meditation', 'Musical medicine', 'Spiritual guide or shaman', 'Prior medical consultation at a partner clinic', 'Private transport from hotel to ceremonial center'], p: 'US$ 350 per person · US$ 700 total (2 people)' },
+    'Wachuma – Retiro Full Day': { n: 'Wachuma – Full Day Retreat', cat: 'Mystic tourism', dur: '7:00 a.m. – 2:30 p.m.', d: 'Group or private retreat at the Rumira ceremonial sanctuary (Sacred Valley), departing from Cusco and returning the same day.', inc: ['Energetic cleansing and protection', 'Inca Energy Meditation', 'Musical medicine', '"Cusco Attractions" book', '7 protection crystals', 'Prior medical consultation at a partner clinic', 'Private transport'], p: 'US$ 200 per person' },
+    'Wachuma – Retiro 2 días / 1 noche': { n: 'Wachuma – 2 days / 1 night Retreat', cat: 'Mystic tourism', dur: '2 days / 1 night', d: 'Overnight stay in the Sacred Valley, vegan dinner and breakfast, and ceremony the next day. Group or private.', inc: ['Vegan dinner and breakfast', 'Energetic cleansing and protection', 'Inca Energy Meditation', 'Musical medicine', 'Prior medical consultation at a partner clinic'], p: 'US$ 320 per person' },
+    'Ayahuasca – Full Day': { n: 'Ayahuasca – Full Day', cat: 'Mystic tourism', dur: '7:00 a.m. – 3:30 p.m.', d: 'Purification experience in the Sacred Valley · Calca. The ceremony lasts roughly 3 to 5 hours and is led by a spiritual guide or shaman.', inc: ['Introduction to ancestral medicine', 'Energetic cleansing and protection', 'Inca Energy Meditation', 'Musical medicine (icaros)', 'Prior medical consultation at the San José clinic', 'Physical and psychological health questionnaire', 'Private round-trip transport', 'Groups of up to 6 people'], p: 'S/ 650 per person' },
+    'Ayahuasca – 2 días / 1 noche Grupal': { n: 'Ayahuasca – 2 days / 1 night Group', cat: 'Mystic tourism', dur: '2 days / 1 night', d: 'Overnight stay at the sanctuary and ceremony in a small group (maximum 6 people).', inc: ['Introduction to ancestral medicine', 'Musical medicine (icaros)', 'Prior medical consultation', 'Staff present throughout the ceremony'], p: 'S/ 950 per person' },
+    'Ayahuasca – 2 días / 1 noche Privado': { n: 'Ayahuasca – 2 days / 1 night Private', cat: 'Mystic tourism', dur: '2 days / 1 night', d: 'Private experience with personalized attention throughout the retreat.', inc: ['Introduction to ancestral medicine', 'Musical medicine (icaros)', 'Prior medical consultation', 'Staff present throughout the ceremony'], p: 'S/ 1,100 per person' },
+    'Baño de Florecimiento – Las Yerberas': { n: 'Flowering Bath – Las Yerberas', cat: 'Mystic tourism', dur: 'Inquire', d: 'Andean ritual of cleansing and renewal with flowers, aromatic herbs, salts and quartz crystals. It can be experienced as a stand-alone service or as a complement to your ceremony. Types: Cleansing and purification, Love and abundance, Prosperity.', p: 'Inquire' }
+  };
+  function trEn(s) { var I = root.LunaI18n; return (I && I.tr) ? I.tr(s, 'en') : s; }
+  var DIFF_EN = { 'Fácil': 'Easy', 'Moderada': 'Moderate', 'Moderado': 'Moderate', 'Moderada/Desafío': 'Moderate/Challenging', 'Desafío': 'Challenging' };
+  function durEn(s) {
+    return String(s).replace(/Medio d[ií]a/i, 'Half day').replace(/(\d+)\s*d[ií]as?/gi, function (m, n) { return n + (+n === 1 ? ' day' : ' days'); })
+      .replace(/(\d+)\s*noches?/gi, function (m, n) { return n + (+n === 1 ? ' night' : ' nights'); }).replace(/horas?/gi, 'hours').replace(/hrs/gi, 'hrs');
+  }
+  /* campo localizado de un tour: it.en (datos propios) > diccionario de la web > texto original */
+  function X(it, f, lang) {
+    if (lang !== 'en') return it[f];
+    if (it.en && it.en[f] !== undefined) return it.en[f];
+    var v = it[f];
+    if (f === 'dur') return durEn(v);
+    if (f === 'diff') return DIFF_EN[v] || trEn(v);
+    if (Array.isArray(v)) return v.map(trEn);
+    return trEn(v);
+  }
+
   var ITEMS = [];
   CATALOG.forEach(function (t) {
     var durParts = String(t.duracion || '').split('|');
@@ -115,11 +151,11 @@
       d: t.descripcion || '', inc: t.incluye || [], p: t.precio || 'Consultar', a: ''
     });
   });
-  EXTRA.forEach(function (x) { ITEMS.push({ sec: x.sec, n: x.n, cat: x.cat, badge: '', dur: x.dur, diff: '', d: x.d, inc: x.inc, p: x.p, a: x.a }); });
+  EXTRA.forEach(function (x) { ITEMS.push({ sec: x.sec, n: x.n, cat: x.cat, badge: '', dur: x.dur, diff: '', d: x.d, inc: x.inc, p: x.p, a: x.a, en: EXTRA_EN[x.n] }); });
   ITEMS.forEach(function (it, i) {
     it.i = i;
     ALIASES.forEach(function (al) { if (al[0].test(it.n)) it.a += ' ' + al[1]; });
-    it.tags = norm([it.n, it.cat, it.d, it.a, it.dur].join(' '));
+    it.tags = norm([it.n, it.cat, it.d, it.a, it.dur, X(it, 'n', 'en'), X(it, 'cat', 'en'), X(it, 'd', 'en')].join(' '));
     it.tokset = {};
     toks(it.tags).forEach(function (w) { it.tokset[w] = 1; });
     it.nameTok = {};
@@ -149,6 +185,7 @@
     }
     return out;
   }
+  function priceOf(it, lang) { return (lang === 'en' && it.en && it.en.p !== undefined) ? it.en.p : fmtPrice(it.p, lang); }
   function fmtPrice(p, lang) {
     var m = /Extranjeros\s+US\$\s*(\d[\d,]*)\s*·?\s*Nacionales\s+S\/\.?\s*(\d[\d,]*)\s*\(?\s*US\$\s*(\d[\d,]*)\s*\)?/i.exec(p);
     if (m) {
@@ -157,6 +194,7 @@
     }
     m = /Nacionales\s+S\/\.?\s*(\d[\d,]*)\s*\(?\s*US\$\s*(\d[\d,]*)\s*\)?/i.exec(p);
     if (m && /^Nacionales/i.test(p)) return L(lang, 'Nacionales: S/ ' + m[1] + ' (US$ ' + m[2] + ')', 'Nationals: S/ ' + m[1] + ' (US$ ' + m[2] + ')');
+    if (lang === 'en') { var d = trEn(p); if (d !== p) return d.replace(/S\/\.\s*/g, 'S/ '); }
     var r = String(p).replace(/S\/\.\s*/g, 'S/ ').replace(/^Desde/i, L(lang, 'Desde', 'From'));
     if (/^Consultar$/i.test(p)) return L(lang, 'Precio: consultar por WhatsApp', 'Price: ask on WhatsApp');
     if (/gratis/i.test(p)) return L(lang, '¡GRATIS!', 'FREE!');
@@ -238,25 +276,26 @@
   }
 
   /* ---------- Render ---------- */
-  function badge(it) { return it.badge ? '<span class="llb-tag">' + esc(it.badge) + '</span>' : ''; }
+  function badge(it, lang) { return it.badge ? '<span class="llb-tag">' + esc(X(it, 'badge', lang)) + '</span>' : ''; }
   function card(it, lang) {
-    var inc = it.inc.slice(0, 5).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
-    var more = it.inc.length > 5 ? '<li class="llb-more">+' + (it.inc.length - 5) + L(lang, ' más…', ' more…') + '</li>' : '';
+    var incs = X(it, 'inc', lang) || [];
+    var inc = incs.slice(0, 5).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
+    var more = incs.length > 5 ? '<li class="llb-more">+' + (incs.length - 5) + L(lang, ' más…', ' more…') + '</li>' : '';
     var sec = { mapi: 'catalogos', cusco: 'catalogos', aventura: 'aventura', mistico: 'misticos' }[it.sec];
-    var meta = [it.dur, it.diff].filter(Boolean).map(esc).join(' · ');
+    var meta = [X(it, 'dur', lang), X(it, 'diff', lang)].filter(Boolean).map(esc).join(' · ');
     var msg = L(lang, 'Hola Luna Llena Tours, quiero información sobre: ' + it.n, 'Hello Luna Llena Tours, I would like information about: ' + it.n);
-    return '<div class="llb-card"><div class="llb-card-h">' + esc(it.n) + badge(it) + '</div>' +
+    return '<div class="llb-card"><div class="llb-card-h">' + esc(X(it, 'n', lang)) + badge(it, lang) + '</div>' +
       (meta ? '<div class="llb-meta">🕒 ' + meta + '</div>' : '') +
-      (it.d ? '<div class="llb-desc">' + esc(it.d) + '</div>' : '') +
+      (it.d ? '<div class="llb-desc">' + esc(X(it, 'd', lang)) + '</div>' : '') +
       (inc ? '<div class="llb-inc">' + L(lang, 'Incluye', 'Includes') + ':</div><ul>' + inc + more + '</ul>' : '') +
-      '<div class="llb-price">💰 ' + esc(fmtPrice(it.p, lang)) + '</div>' +
+      '<div class="llb-price">💰 ' + esc(priceOf(it, lang)) + '</div>' +
       '<div class="llb-btns"><button class="llb-btn" data-book="' + it.i + '">' + L(lang, '📅 Reservar', '📅 Book') + '</button>' +
       '<a class="llb-btn llb-btn-wa" target="_blank" rel="noopener" href="' + wa(msg) + '">WhatsApp</a>' +
       '<button class="llb-btn llb-btn-ghost" data-go="' + sec + '">' + L(lang, 'Ver en la web', 'See on site') + '</button></div></div>';
   }
   function listHtml(items, lang) {
     return '<div class="llb-list">' + items.map(function (it) {
-      return '<button class="llb-li" data-tour="' + it.i + '"><b>' + esc(it.n) + '</b><span>' + esc(it.dur) + ' · ' + esc(fmtPrice(it.p, lang)) + '</span></button>';
+      return '<button class="llb-li" data-tour="' + it.i + '"><b>' + esc(X(it, 'n', lang)) + '</b><span>' + esc(X(it, 'dur', lang)) + ' · ' + esc(priceOf(it, lang)) + '</span></button>';
     }).join('') + '</div>';
   }
   function waBtn(lang, msg, label) {
@@ -491,7 +530,7 @@
   function startBooking(st, it) {
     var l = st.lang;
     st.book = { step: it ? 'name' : 'tour', d: { tour: it ? it.n : '' } };
-    if (it) return { parts: [L(l, 'Perfecto, reservemos <b>' + esc(it.n) + '</b> 📅. Te tomo unos datos y luego abrimos WhatsApp con todo listo.<br><b>¿Cuál es tu nombre completo?</b>', 'Great, let\'s book <b>' + esc(it.n) + '</b> 📅. I\'ll take a few details and then open WhatsApp with everything ready.<br><b>What is your full name?</b>')], chips: [{ l: L(l, '✖ Cancelar', '✖ Cancel'), c: 'cancelar' }] };
+    if (it) return { parts: [L(l, 'Perfecto, reservemos <b>' + esc(X(it, 'n', 'es')) + '</b> 📅. Te tomo unos datos y luego abrimos WhatsApp con todo listo.<br><b>¿Cuál es tu nombre completo?</b>', 'Great, let\'s book <b>' + esc(X(it, 'n', 'en')) + '</b> 📅. I\'ll take a few details and then open WhatsApp with everything ready.<br><b>What is your full name?</b>')], chips: [{ l: L(l, '✖ Cancelar', '✖ Cancel'), c: 'cancelar' }] };
     var pop = ['MAPI Full Day Tren Turístico Expeditions', 'Montaña de Colores (Vinicunca)', 'Laguna Humantay', 'Valle Sagrado VIP + Maras Moray', 'MAPI 5D/4N Salkantay to Machu Picchu'];
     return { parts: [L(l, '📅 <b>Reserva rápida.</b> Te haré 4 preguntas y abriré WhatsApp con tu solicitud lista (la reserva se confirma con un asesor).<br><b>¿Qué tour te interesa?</b> Escribe el nombre o elige uno.', '📅 <b>Quick booking.</b> I\'ll ask 4 questions and open WhatsApp with your request ready (an advisor confirms the booking).<br><b>Which tour are you interested in?</b> Type its name or pick one.')],
       chips: pop.map(function (n) { return { l: n.replace(/ to Machu Picchu/, '').replace('Tren Turístico ', ''), c: 'booktour', t: n }; }).concat([{ l: L(l, '✖ Cancelar', '✖ Cancel'), c: 'cancelar' }]) };
@@ -600,7 +639,7 @@
     '#llb-dot{position:absolute;top:10px;right:8px;width:16px;height:16px;border-radius:50%;background:#e63946;border:2px solid #fff;animation:llbp 1.6s infinite}' +
     '@keyframes llbp{0%{box-shadow:0 0 0 0 rgba(230,57,70,.6)}100%{box-shadow:0 0 0 12px rgba(230,57,70,0)}}' +
     '#llb-tip{position:fixed;right:248px;bottom:96px;z-index:1100;background:#fff;color:#1a1a1a;padding:10px 14px;border-radius:14px 14px 4px 14px;font-size:13px;font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,.25);max-width:230px;cursor:pointer;display:none}' +
-    '#llb-panel{padding:0;margin:0;position:fixed;right:20px;bottom:190px;z-index:1100;width:392px;max-width:calc(100vw - 24px);height:600px;max-height:calc(100vh - 210px);background:#fff;border-radius:18px;box-shadow:0 18px 50px rgba(0,0,0,.4);display:none;flex-direction:column;overflow:hidden;border:1px solid rgba(0,0,0,.08)}' +
+    '#llb-panel{padding:0;margin:0;position:fixed;right:20px;bottom:190px;z-index:1100;width:392px;max-width:calc(100vw - 24px);height:600px;max-height:calc(100vh - 290px);background:#fff;border-radius:18px;box-shadow:0 18px 50px rgba(0,0,0,.4);display:none;flex-direction:column;overflow:hidden;border:1px solid rgba(0,0,0,.08)}' +
     '#llb-panel.open{display:flex;animation:llbin .25s ease}@keyframes llbin{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}' +
     '#llb-head{background:linear-gradient(135deg,#2d5016,#1a1a1a);color:#fff;padding:14px 16px;display:flex;align-items:center;gap:12px}' +
     '#llb-hmedia{width:64px;height:68px;flex:0 0 auto;position:relative;margin:-8px 0 -8px -4px}#llb-hmedia .llb-mwrap{filter:none}' +
@@ -864,6 +903,34 @@
     });
   }
 
+
+  /* idioma de la página (selector de i18n.js) */
+  function pageLang() { var I = root.LunaI18n; var l = (I && I.lang) || document.documentElement.getAttribute('lang') || 'es'; return l === 'es' ? 'es' : 'en'; }
+  var UI = {
+    es: { ph: 'Escribe tu pregunta…', sub: 'Asistente virtual', foot: 'Información de la web · Reservas confirmadas por un asesor', tip: '¿Te ayudo a planear tu viaje a Machu Picchu? 🏔️', open: 'Abrir asistente virtual', close: 'Cerrar', msg: 'Mensaje', send: 'Enviar' },
+    en: { ph: 'Type your question…', sub: 'Virtual assistant', foot: 'Website information · Bookings confirmed by an advisor', tip: 'Can I help you plan your trip to Machu Picchu? 🏔️', open: 'Open virtual assistant', close: 'Close', msg: 'Message', send: 'Send' }
+  };
+  function applyUiLang() {
+    var u = UI[st.lang] || UI.es, q = function (s) { return document.querySelector(s); };
+    els.input.placeholder = u.ph; els.input.setAttribute('aria-label', u.msg);
+    var sub = q('#llb-head .llb-t span'); if (sub) sub.textContent = u.sub;
+    var ft = document.getElementById('llb-foot'); if (ft) ft.textContent = u.foot;
+    var send = document.getElementById('llb-send'); if (send) send.setAttribute('aria-label', u.send);
+    var cl = document.getElementById('llb-close'); if (cl) cl.setAttribute('aria-label', u.close);
+    els.fab.setAttribute('aria-label', u.open);
+    els.panel.setAttribute('aria-label', st.lang === 'en' ? 'Luna Llena Tours virtual assistant' : 'Asistente virtual Luna Llena Tours');
+    if (els.tip.style.display !== 'block') els.tip.textContent = u.tip;
+    var mute = document.getElementById('llb-mute');
+    if (mute) { var m = (typeof muted !== 'undefined' && muted); mute.setAttribute('aria-label', st.lang === 'en' ? (m ? 'Turn voice on' : 'Mute voice') : (m ? 'Activar voz' : 'Silenciar voz')); }
+  }
+  function onPageLang(l) {
+    l = l === 'es' ? 'es' : 'en';
+    var changed = st.lang !== l;
+    st.lang = l; applyUiLang();
+    if (els.msgs && els.msgs.children.length && !busy) setChips(menuChips(l));
+    if (changed) { /* el idioma de las próximas respuestas sigue al de la página */ }
+  }
+
   function init() {
     if (document.getElementById('llb-root')) return;
     var style = el('style'); style.textContent = CSS; document.head.appendChild(style);
@@ -879,6 +946,8 @@
       '<div id="llb-foot">Información de la web · Reservas confirmadas por un asesor</div></div>';
     document.body.appendChild(rootEl);
     els = { fab: document.getElementById('llb-fab'), panel: document.getElementById('llb-panel'), msgs: document.getElementById('llb-msgs'), chips: document.getElementById('llb-chips'), input: document.getElementById('llb-input'), tip: document.getElementById('llb-tip'), dot: document.getElementById('llb-dot') };
+    st.lang = pageLang(); applyUiLang();
+    document.addEventListener('lunallena:lang', function (e) { onPageLang(e.detail && e.detail.lang); });
     setupMascot();
     els.fab.addEventListener('click', function () { wake(true); toggle(); });
     document.getElementById('llb-close').addEventListener('click', function () { toggle(false); els.fab.focus(); });
